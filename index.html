@@ -91,40 +91,66 @@
 <li><p>插入元素</p>
 <blockquote>
 <p>逐条加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; alist = new ArrayList();</span><br><span class="line">alist.add(&quot;lambo&quot;);</span><br></pre></td></tr></table></figure>
+<pre><code>
+ArrayList<string> alist = new ArrayList();
+alist.add("lambo");
+</string></code></pre>
+
 <p>在指定地点加入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alist.add(1,&quot;lambo2&quot;)</span><br></pre></td></tr></table></figure>
-</blockquote>
+<pre><code>
+alist.add(1,"lambo2")
+</code></pre>
+将另一个ArrayList加入当前ArrayList
+<pre><code>
+ArrayList alist2 = new ArrayList();
+alist2.add("lambos");
+alist.addAll(alist2);
+</code></pre></blockquote>
 </li>
-</ul>
+<li><p>删除元素</p>
 <blockquote>
-<p>将另一个ArrayList加入当前ArrayList<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ArrayList alist2 = new ArrayList();</span><br><span class="line">   alist2.add(&quot;lambos&quot;);</span><br><span class="line">   alist.addAll(alist2);</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<ul>
-<li>删除元素<blockquote>
 <p>删除对应位置的内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alist.remove(1);</span><br></pre></td></tr></table></figure>
+<pre><code>
+alist.remove(1);
+</code></pre>
+删除整个ArrayList
+<pre><code>
+alist.clear();
+</code></pre>
+
+<p>按照条件删除对应字段</p>
+<pre><code>
+alist.removeIf(str -> str.length() > 5)//这里删除的是长度5以上的字段，使用的是Lambda表达式，具体的Lambda以后在详细说明
+</code></pre>
+
+
 </blockquote>
 </li>
 </ul>
-<blockquote>
-<p>删除整个ArrayList<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alist.clear();</span><br></pre></td></tr></table></figure></p>
-<p>按照条件删除对应字段<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alist.removeIf(str -&gt; str.length() &gt; 5)//这里删除的是长度5以上的字段，使用的是Lambda表达式，具体的Lambda以后在详细说明</span><br></pre></td></tr></table></figure></p>
-</blockquote>
 <ul>
 <li><p>遍历</p>
 <blockquote>
 <p>iterator遍历</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Iterator it = alist.iterator();</span><br><span class="line">   while (it.hasNext()) &#123;</span><br><span class="line">       it.next();</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<pre><code>
+Iterator it = alist.iterator();
+while (it.hasNext()) {
+   it.next();
+}
+</code></pre>
+
 <p>for循环遍历</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &lt; alist.size(); i++) &#123;</span><br><span class="line">           alist.get(i);</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
+<pre><code>
+for (int i = 0; i < alist.size(); i++) {
+       alist.get(i);
+   }
+   </code></pre>
+for each循环遍历
+<pre><code>
+for (String s:alist) {
+       System.out.println(s);
+   }
+   </code></pre></blockquote>
 </li>
-</ul>
-<blockquote>
-<p>for each循环遍历<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (String s:alist) &#123;</span><br><span class="line">           System.out.println(s);</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<ul>
 <li><p>总结</p>
 <blockquote>
 <p>ArrayList和LinkedList由于都是实现的List类，所以大部分操作都是类似的，熟悉了LinkedList的相关操作，ArrayList大部分也就都会了，但是这里要说明的这两个list的不同之处，方便在实际开发中进行选择</p>
@@ -140,7 +166,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjb917ukt00007wivc367trjp" class="article-share-link" data-share="baidu" data-title="arraylist">分享到</a>
+        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjb92gtsq0000zcivjs1gkiyn" class="article-share-link" data-share="baidu" data-title="arraylist">分享到</a>
       
 
       
@@ -226,7 +252,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/16/test2/" data-id="cjb917ulc00047wivxxy0ckmc" class="article-share-link" data-share="baidu" data-title="test2">分享到</a>
+        <a data-url="http://yoursite.com/2017/12/16/test2/" data-id="cjb92gtt10004zciv355kdlo0" class="article-share-link" data-share="baidu" data-title="test2">分享到</a>
       
 
       
@@ -271,7 +297,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/15/test/" data-id="cjb917ula00037wivop15hjis" class="article-share-link" data-share="baidu" data-title="test">分享到</a>
+        <a data-url="http://yoursite.com/2017/12/15/test/" data-id="cjb92gtsz0003zcivs0zdsc68" class="article-share-link" data-share="baidu" data-title="test">分享到</a>
       
 
       
@@ -324,7 +350,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjb917ul300017wivbzu6na1d" class="article-share-link" data-share="baidu" data-title="Hello World">分享到</a>
+        <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjb92gtsv0001zcivq0pwonyk" class="article-share-link" data-share="baidu" data-title="Hello World">分享到</a>
       
 
       
