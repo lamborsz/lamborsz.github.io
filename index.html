@@ -91,65 +91,48 @@
 <li><p>插入元素</p>
 <blockquote>
 <p>逐条加入</p>
-<pre><code>
-ArrayList<string> alist = new ArrayList();
-alist.add("lambo");
-</string></code></pre>
+<pre><code>ArrayList<string> alist = new ArrayList();
+alist.add("lambo");</string></code></pre>
 
 <p>在指定地点加入</p>
-<pre><code>
-alist.add(1,"lambo2")
-</code></pre>
-将另一个ArrayList加入当前ArrayList
-<pre><code>
-ArrayList alist2 = new ArrayList();
+<pre><code>alist.add(1,"lambo2")</code></pre>
+
+<p>将另一个ArrayList加入当前ArrayList</p>
+<pre><code>ArrayList alist2 = new ArrayList();
 alist2.add("lambos");
-alist.addAll(alist2);
-</code></pre></blockquote>
+alist.addAll(alist2);</code></pre>
+</blockquote>
 </li>
 <li><p>删除元素</p>
 <blockquote>
 <p>删除对应位置的内容</p>
-<pre><code>
-alist.remove(1);
-</code></pre>
-删除整个ArrayList
-<pre><code>
-alist.clear();
-</code></pre>
+<pre><code>alist.remove(1);</code></pre>
+
+<p>删除整个ArrayList</p>
+<pre><code>alist.clear();</code></pre>
 
 <p>按照条件删除对应字段</p>
-<pre><code>
-alist.removeIf(str -> str.length() > 5)//这里删除的是长度5以上的字段，使用的是Lambda表达式，具体的Lambda以后在详细说明
-</code></pre>
-
-
+<pre><code>alist.removeIf(str -> str.length() > 5)//这里删除的是长度5以上的字段，使用的是Lambda表达式，具体的Lambda以后在详细说明</code></pre>
 </blockquote>
 </li>
-</ul>
-<ul>
 <li><p>遍历</p>
 <blockquote>
 <p>iterator遍历</p>
-<pre><code>
-Iterator it = alist.iterator();
+<pre><code>Iterator it = alist.iterator();
 while (it.hasNext()) {
    it.next();
-}
-</code></pre>
+}</code></pre>
 
 <p>for循环遍历</p>
-<pre><code>
-for (int i = 0; i < alist.size(); i++) {
+<pre><code>for (int i = 0; i < alist.size(); i++) {
        alist.get(i);
-   }
-   </code></pre>
-for each循环遍历
-<pre><code>
-for (String s:alist) {
+   }</code></pre>
+
+<p>for each循环遍历</p>
+<pre><code>for (String s:alist) {
        System.out.println(s);
-   }
-   </code></pre></blockquote>
+   }</code></pre>
+</blockquote>
 </li>
 <li><p>总结</p>
 <blockquote>
@@ -166,11 +149,11 @@ for (String s:alist) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjb92gtsq0000zcivjs1gkiyn" class="article-share-link" data-share="baidu" data-title="arraylist">分享到</a>
+        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjb92m29n0000awivjqppi4ga" class="article-share-link" data-share="baidu" data-title="arraylist">Share</a>
       
 
       
-        <a href="http://yoursite.com/2017/12/16/arraylist/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://yoursite.com/2017/12/16/arraylist/#ds-thread" class="article-comment-link">Comments</a>
       
 
       
@@ -252,11 +235,11 @@ for (String s:alist) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/16/test2/" data-id="cjb92gtt10004zciv355kdlo0" class="article-share-link" data-share="baidu" data-title="test2">分享到</a>
+        <a data-url="http://yoursite.com/2017/12/16/test2/" data-id="cjb92m29z0004awivh7vxjg8d" class="article-share-link" data-share="baidu" data-title="test2">Share</a>
       
 
       
-        <a href="http://yoursite.com/2017/12/16/test2/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://yoursite.com/2017/12/16/test2/#ds-thread" class="article-comment-link">Comments</a>
       
 
       
@@ -297,11 +280,11 @@ for (String s:alist) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/15/test/" data-id="cjb92gtsz0003zcivs0zdsc68" class="article-share-link" data-share="baidu" data-title="test">分享到</a>
+        <a data-url="http://yoursite.com/2017/12/15/test/" data-id="cjb92m29t0001awivc2jflvn4" class="article-share-link" data-share="baidu" data-title="test">Share</a>
       
 
       
-        <a href="http://yoursite.com/2017/12/15/test/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://yoursite.com/2017/12/15/test/#ds-thread" class="article-comment-link">Comments</a>
       
 
       
@@ -350,11 +333,11 @@ for (String s:alist) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjb92gtsv0001zcivq0pwonyk" class="article-share-link" data-share="baidu" data-title="Hello World">分享到</a>
+        <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjb92m29y0003awiv7ij0frdt" class="article-share-link" data-share="baidu" data-title="Hello World">Share</a>
       
 
       
-        <a href="http://yoursite.com/2017/12/15/hello-world/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://yoursite.com/2017/12/15/hello-world/#ds-thread" class="article-comment-link">Comments</a>
       
 
       
@@ -374,7 +357,7 @@ for (String s:alist) {
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/arraylist/">arraylist</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oracle/">oracle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/标签/">标签</a><span class="tag-list-count">1</span></li></ul>
     </div>
@@ -383,7 +366,7 @@ for (String s:alist) {
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
+    <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
       <a href="/tags/arraylist/" style="font-size: 10px;">arraylist</a> <a href="/tags/oracle/" style="font-size: 10px;">oracle</a> <a href="/tags/标签/" style="font-size: 10px;">标签</a>
     </div>
@@ -392,7 +375,7 @@ for (String s:alist) {
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">4</span></li></ul>
     </div>
@@ -401,7 +384,7 @@ for (String s:alist) {
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">近期文章</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -428,7 +411,7 @@ for (String s:alist) {
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">友情链接</h3>
+    <h3 class="widget-title">Links</h3>
     <div class="widget">
       <ul>
         
@@ -473,7 +456,7 @@ for (String s:alist) {
 </nav>
   <!-- totop start -->
 <div id="totop">
-<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+<a title="totop"><img src="/img/scrollup.png"/></a>
 </div>
 
 <!-- totop end -->
