@@ -149,7 +149,7 @@ while (it.hasNext()) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjb92ocr50000moiv5zgug7qw" class="article-share-link" data-share="baidu" data-title="集合之--ArrayList操作">Share</a>
+        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjb93143z0001foivzrdsr6ht" class="article-share-link" data-share="baidu" data-title="集合之--ArrayList操作">Share</a>
       
 
       
@@ -180,7 +180,7 @@ while (it.hasNext()) {
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/16/test2/">test2</a>
+      <a class="article-title" href="/2017/12/16/test2/">Oracle操作之--表</a>
     </h1>
   
 
@@ -193,41 +193,54 @@ while (it.hasNext()) {
 <li><p>创建：</p>
 <blockquote>
 <p>创建一个userinfo表，里面的字段有id,username,userpasswd</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">create table userinfo</span><br><span class="line">(id number(6,0),</span><br><span class="line">username varchar2(20),</span><br><span class="line">userpasswd varchar2(20)</span><br><span class="line">redate date);</span><br></pre></td></tr></table></figure>
+<pre><code>create table userinfo
+(id number(6,0),
+username varchar2(20),
+userpasswd varchar2(20)
+redate date);</code></pre>
+
 <p>创建表的时候可以自己来指定表的表空间</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create table userinfo2</span><br><span class="line">(id number(6,0),</span><br><span class="line">username varchar2(20),</span><br><span class="line">userpasswd varchar2(20) tablespace sys);</span><br></pre></td></tr></table></figure>
+<pre><code>create table userinfo2
+(id number(6,0),
+username varchar2(20),
+userpasswd varchar2(20) tablespace sys);</code></pre>
+
+<p>如果不指定表空间，创建的表将默认为system表空间<br><br>若创建表后想知道该表有哪些字段，可以使用desc userinfo查询<br></p>
 </blockquote>
 </li>
 </ul>
-<p><br>如果不指定表空间，创建的表将默认为system表空间<br><br><br>若创建表后想知道该表有哪些字段，可以使用desc userinfo查询<br></p>
 <ul>
-<li>修改：<blockquote>
+<li><p>修改：</p>
+<blockquote>
 <p>修改表名</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rename userinfo to new_userinfo</span><br></pre></td></tr></table></figure>
+<pre><code>rename userinfo to new_userinfo</code></pre>
+
+<p>修改表的字段名</p>
+<pre><code>alter table userinfo
+rename column id to new_id;</code></pre>
+
+<p>在userinfo表中添加一个remarks字段</p>
+<pre><code>alter table userinfo
+add remarks varchar2(500);</code></pre>
+
+<p>修改remarks字段的长度</p>
+<pre><code>alter table userinfo
+modify remarks varchar2(400);</code></pre>
 </blockquote>
 </li>
-</ul>
+<li><p>删除：</p>
 <blockquote>
-<p>修改表的字段名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alter table userinfo</span><br><span class="line">rename column id to new_id;</span><br></pre></td></tr></table></figure></p>
-<p>在userinfo表中添加一个remarks字段<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alter table userinfo</span><br><span class="line">add remarks varchar2(500);</span><br></pre></td></tr></table></figure></p>
-<p>修改remarks字段的长度<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alter table userinfo</span><br><span class="line">modify remarks varchar2(400);</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<ul>
-<li>删除：<blockquote>
 <p>删除字段</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alter table userinfo</span><br><span class="line">drop column remarks;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-</ul>
-<blockquote>
+<pre><code>alter table userinfo
+drop column remarks;</code></pre>
+
 <p>删除表</p>
 <ul>
-<li>表的截断,即删掉表中的全部数据，但是表还存在<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">truncate table userinfo</span><br></pre></td></tr></table></figure>
+<li>表的截断,即删掉表中的全部数据，但是表还存在<pre><code>truncate table userinfo</code></pre></li>
+<li>表的删除<pre><code>drop table userinfo</code></pre>
 </li>
 </ul>
 </blockquote>
-<ul>
-<li>表的删除<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop table userinfo</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
@@ -235,7 +248,7 @@ while (it.hasNext()) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/16/test2/" data-id="cjb92ocrg0003moivot8bmmo0" class="article-share-link" data-share="baidu" data-title="test2">Share</a>
+        <a data-url="http://yoursite.com/2017/12/16/test2/" data-id="cjb9314450004foivcpe87b7t" class="article-share-link" data-share="baidu" data-title="Oracle操作之--表">Share</a>
       
 
       
@@ -280,7 +293,7 @@ while (it.hasNext()) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/15/test/" data-id="cjb92ocri0004moivl7mycitw" class="article-share-link" data-share="baidu" data-title="test">Share</a>
+        <a data-url="http://yoursite.com/2017/12/15/test/" data-id="cjb9314410002foivwth6qy1t" class="article-share-link" data-share="baidu" data-title="test">Share</a>
       
 
       
@@ -333,7 +346,7 @@ while (it.hasNext()) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjb92ocrc0001moivzdilv12s" class="article-share-link" data-share="baidu" data-title="Hello World">Share</a>
+        <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjb93143u0000foiv0fh896s3" class="article-share-link" data-share="baidu" data-title="Hello World">Share</a>
       
 
       
@@ -393,7 +406,7 @@ while (it.hasNext()) {
           </li>
         
           <li>
-            <a href="/2017/12/16/test2/">test2</a>
+            <a href="/2017/12/16/test2/">Oracle操作之--表</a>
           </li>
         
           <li>
