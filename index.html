@@ -1,212 +1,529 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta charset="utf-8">
+  
   <title>lambo</title>
-  <meta name="description" content="" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
-
-  <meta name="generator" content="lambo">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="lambo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="lambo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="lambo">
+  
+    <link rel="alternative" href="/atom.xml" title="lambo" type="application/atom+xml">
   
   
+    <link rel="icon" href="/favicon.png">
   
-
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
   
 </head>
-
-
-<body class="home-template">
-
-  <header class="site-head"  style="background-image: url(//blog.ghost.org/content/images/2013/Nov/cover.png)" >
-    <div class="vertical">
-        <div class="site-head-content inner">
-             <a class="blog-logo" href="/"><img src="//blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png" alt="Blog Logo"/></a> 
-            <h1 class="blog-title">lambo</h1>
-            <h2 class="blog-description"></h2>
-        </div>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">lambo</a>
+      </h1>
+      
     </div>
-</header>
-  
-<main class="content" role="main">
-  
-  <article class="post">
-    <header class="post-header">
-      <span class="post-meta">
-      <time datetime="2017-12-15T17:00:03.000Z" itemprop="datePublished">
-          2017-12-16
-      </time>
-    
-    
-    | 
-    <a href='/tags/arraylist/'>arraylist</a>
-    
-    
-</span>
-      <h2 class="post-title"><a href="/2017/12/16/arraylist/">集合之--ArrayList操作</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
-      
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-插入元素
-
-逐条加入
-ArrayList alist = new ArrayList();
-alist.add("lambo");
-
-在指定地点加入
-alist.add(1,"lambo2")
-
-将另一个ArrayList加入当前ArrayList
-ArrayList alist2 = new ArrayList();
-alist2.add("lambos");
-alist.addAll(alist2);
-
-
-删除元素
-
-删除对应位置
-      
-      </p>
-      
-      <p>
-          <a href="/2017/12/16/arraylist/" class="excerpt-link">Read More...</a>
-      </p>
-      
-    </section>
-  </article>
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="yoursite.com">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main">
   
-  <article class="post">
-    <header class="post-header">
-      <span class="post-meta">
-      <time datetime="2017-12-15T16:09:41.000Z" itemprop="datePublished">
-          2017-12-16
-      </time>
+    <article id="post-arraylist" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/16/arraylist/" class="article-date">
+  <time datetime="2017-12-15T17:00:03.000Z" itemprop="datePublished">2017-12-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
     
     
-    | 
-    <a href='/tags/oracle/'>oracle</a>
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/16/arraylist/">集合之--ArrayList操作</a>
+    </h1>
+  
+
+      </header>
     
-    
-</span>
-      <h2 class="post-title"><a href="/2017/12/16/test2/">Oracle操作之--表</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
+    <div class="article-entry" itemprop="articleBody">
       
-        Oracle操作之–表
+        <ul>
+<li><p>插入元素</p>
+<blockquote>
+<p>逐条加入</p>
+<pre><code>ArrayList<string> alist = new ArrayList();
+alist.add("lambo");</string></code></pre>
 
-创建：
+<p>在指定地点加入</p>
+<pre><code>alist.add(1,"lambo2")</code></pre>
 
-创建一个userinfo表，里面的字段有id,username,userpasswd
-create table userinfo
+<p>将另一个ArrayList加入当前ArrayList</p>
+<pre><code>ArrayList alist2 = new ArrayList();
+alist2.add("lambos");
+alist.addAll(alist2);</code></pre>
+</blockquote>
+</li>
+<li><p>删除元素</p>
+<blockquote>
+<p>删除对应位置的内容</p>
+<pre><code>alist.remove(1);</code></pre>
+
+<p>删除整个ArrayList</p>
+<pre><code>alist.clear();</code></pre>
+
+<p>按照条件删除对应字段</p>
+<pre><code>alist.removeIf(str -> str.length() > 5)//这里删除的是长度5以上的字段，使用的是Lambda表达式，具体的Lambda以后在详细说明</code></pre>
+</blockquote>
+</li>
+<li><p>遍历</p>
+<blockquote>
+<p>iterator遍历</p>
+<pre><code>Iterator it = alist.iterator();
+while (it.hasNext()) {
+   it.next();
+}</code></pre>
+
+<p>for循环遍历</p>
+<pre><code>for (int i = 0; i < alist.size(); i++) {
+       alist.get(i);
+   }</code></pre>
+
+<p>for each循环遍历</p>
+<pre><code>for (String s:alist) {
+       System.out.println(s);
+   }</code></pre>
+</blockquote>
+</li>
+<li><p>总结</p>
+<blockquote>
+<p>ArrayList和LinkedList由于都是实现的List类，所以大部分操作都是类似的，熟悉了LinkedList的相关操作，ArrayList大部分也就都会了，但是这里要说明的这两个list的不同之处，方便在实际开发中进行选择</p>
+<blockquote>
+<p>ArrayList是<strong>基于索引的数据结构</strong>，通过索引来<strong>读取数据比较快</strong>，但ArrayList有个<strong>扩容操作</strong>，会消耗一定资源，并且对于<strong>添加和删除效率比较差</strong>，因为执行添加删除操作之后ArrayList要重新排布插入点或删除点后面的全部数据，越靠前，消耗越大。</p>
+<p>LinkedList是<strong>基于链表的数据结构</strong>，<strong>读取数据是比较慢</strong>，因为它要从第一个节点往后遍历，但是对于<strong>插入删除数据，LinkedList是比较快的</strong>，因为LinkedList的节点与节点之间是不连续的，是通过记录上一个节点和下一个节点将整个list串起来的，所以在执行插入删除操作时，只需要修改对应的上一个节点和下一个节点就好。</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjb96cbgr000044iv9f58gznx" class="article-share-link" data-share="baidu" data-title="集合之--ArrayList操作">Share</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/16/arraylist/#ds-thread" class="article-comment-link">Comments</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/arraylist/">arraylist</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-test2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/16/test2/" class="article-date">
+  <time datetime="2017-12-15T16:09:41.000Z" itemprop="datePublished">2017-12-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/16/test2/">Oracle操作之--表</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Oracle操作之–表</p>
+<ul>
+<li><p>创建：</p>
+<blockquote>
+<p>创建一个userinfo表，里面的字段有id,username,userpasswd</p>
+<pre><code>create table userinfo
 (id number(6,0),
 username varchar2(20),
 userpasswd varchar2(20)
-redate date);
+redate date);</code></pre>
 
-创建表的时候可以自己来指定表的表空间
-create table userinfo2
+<p>创建表的时候可以自己来指定表的表空间</p>
+<pre><code>create table userinfo2
 (id number(6,0),
-      
-      </p>
-      
-      <p>
-          <a href="/2017/12/16/test2/" class="excerpt-link">Read More...</a>
-      </p>
-      
-    </section>
-  </article>
-  
-  <article class="post">
-    <header class="post-header">
-      <span class="post-meta">
-      <time datetime="2017-12-15T15:47:26.000Z" itemprop="datePublished">
-          2017-12-15
-      </time>
-    
-    
-    | 
-    <a href='/tags/标签/'>标签</a>
-    
-    
-</span>
-      <h2 class="post-title"><a href="/2017/12/15/test/">test</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
-      
-        这是test书写博客的测试
+username varchar2(20),
+userpasswd varchar2(20) tablespace sys);</code></pre>
+
+<p>如果不指定表空间，创建的表将默认为system表空间<br><br>若创建表后想知道该表有哪些字段，可以使用desc userinfo查询<br></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>修改：</p>
+<blockquote>
+<p>修改表名</p>
+<pre><code>rename userinfo to new_userinfo</code></pre>
+
+<p>修改表的字段名</p>
+<pre><code>alter table userinfo
+rename column id to new_id;</code></pre>
+
+<p>在userinfo表中添加一个remarks字段</p>
+<pre><code>alter table userinfo
+add remarks varchar2(500);</code></pre>
+
+<p>修改remarks字段的长度</p>
+<pre><code>alter table userinfo
+modify remarks varchar2(400);</code></pre>
+</blockquote>
+</li>
+<li><p>删除：</p>
+<blockquote>
+<p>删除字段</p>
+<pre><code>alter table userinfo
+drop column remarks;</code></pre>
+
+<p>删除表</p>
+<ul>
+<li>表的截断,即删掉表中的全部数据，但是表还存在<pre><code>truncate table userinfo</code></pre></li>
+<li>表的删除<pre><code>drop table userinfo</code></pre>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
 
       
-      </p>
+    </div>
+    <footer class="article-footer">
       
-      <p>
-          <a href="/2017/12/15/test/" class="excerpt-link">Read More...</a>
-      </p>
+        <a data-url="http://yoursite.com/2017/12/16/test2/" data-id="cjb96cbgx000144ivbw43egmi" class="article-share-link" data-share="baidu" data-title="Oracle操作之--表">Share</a>
       
-    </section>
-  </article>
+
+      
+        <a href="http://yoursite.com/2017/12/16/test2/#ds-thread" class="article-comment-link">Comments</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/oracle/">oracle</a></li></ul>
+
+    </footer>
+  </div>
   
-  <article class="post">
-    <header class="post-header">
-      <span class="post-meta">
-      <time datetime="2017-12-15T13:31:24.193Z" itemprop="datePublished">
-          2017-12-15
-      </time>
-    
-</span>
-      <h2 class="post-title"><a href="/2017/12/15/hello-world/">Hello World</a></h2>
-    </header>
-    <section class="post-excerpt">
-      <p>
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new p
-      
-      </p>
-      
-      <p>
-          <a href="/2017/12/15/hello-world/" class="excerpt-link">Read More...</a>
-      </p>
-      
-    </section>
-  </article>
-  
-  <nav class="pagination" role="pagination">
-    
-    <span class="page-number">Page 1 of 1</span>
-    
-  </nav>
-</main>
+</article>
 
 
   
-<footer class="site-footer">
+    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/15/test/" class="article-date">
+  <time datetime="2017-12-15T15:47:26.000Z" itemprop="datePublished">2017-12-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-  <div class="inner">
-     <section class="copyright">All content copyright <a href="/">lambo</a> &copy; 2014 &bull; All rights reserved.</section>
-     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/15/test/">test</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这是test书写博客的测试</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/15/test/" data-id="cjb96cbh1000344ivnyx8k758" class="article-share-link" data-share="baidu" data-title="test">Share</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/15/test/#ds-thread" class="article-comment-link">Comments</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/标签/">标签</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/15/hello-world/" class="article-date">
+  <time datetime="2017-12-15T13:31:24.193Z" itemprop="datePublished">2017-12-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/15/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjb96cbh2000444ivtvuxcg6v" class="article-share-link" data-share="baidu" data-title="Hello World">Share</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/15/hello-world/#ds-thread" class="article-comment-link">Comments</a>
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/arraylist/">arraylist</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/oracle/">oracle</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/标签/">标签</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/arraylist/" style="font-size: 10px;">arraylist</a> <a href="/tags/oracle/" style="font-size: 10px;">oracle</a> <a href="/tags/标签/" style="font-size: 10px;">标签</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/12/16/arraylist/">集合之--ArrayList操作</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/16/test2/">Oracle操作之--表</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/15/test/">test</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/15/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://arvinxiang.com" target="_blank">主题作者</a>
+          </li>
+        
+          <li>
+            <a href="http://reqianduan.com" target="_blank">热前端</a>
+          </li>
+        
+          <li>
+            <a href="http://yuancheng.work" target="_blank">远程.work</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 lambo<br>
+      Powered by <a href="//hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
   </div>
 </footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="totop"><img src="/img/scrollup.png"/></a>
+</div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- totop end -->
 
-<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="/js/index.js"></script>
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"reqianduan"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>
+  function SetShareData(cmd, config) {
+    if (shareDataTitle && shareDataUrl) {
+      config.bdText = shareDataTitle;
+      config.bdUrl = shareDataUrl;
+    }
+    return config;
+  }
+  window._bd_share_config={
+    "common":{onBeforeClick: SetShareData},
+    "share":{"bdCustomStyle":"/css/bdshare.css"}
+  };
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
 
 
+<script src="/js/script.js"></script>
 
-
+</div>
 </body>
 </html>
