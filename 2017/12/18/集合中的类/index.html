@@ -4,22 +4,24 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>集合之--ArrayList操作 | lambo</title>
+    <title>集合中的类 | lambo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="lambo">
     
-    <meta name="description" content="插入元素
+    <meta name="description" content="Collection
 
-逐条加入
-ArrayList alist = new ArrayList();
-alist.add(&#34;lambo&#34;);
+List：
+LinkedList：可在任意位置进行高效地插入和删除操作的有序序列
+ArrayList：可动态增长和缩减的索引序列，有序序列
 
-在指定地点加入
-alist.add(1,&#34;lambo2&#34;)
 
-将另一个ArrayList加入当前ArrayList
-ArrayList alist2 = new Ar">
+Set：
+HashSet：没有重复元素的无序集合
+LinkedSet：可以记住元素插入次序的集合
+
+
+EnumSet：包含枚举类型值">
     
     
     
@@ -75,15 +77,15 @@ ArrayList alist2 = new Ar">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/12/16/arraylist/" title="集合之--ArrayList操作" itemprop="url">集合之--ArrayList操作</a>
+      <a href="/2017/12/18/集合中的类/" title="集合中的类" itemprop="url">集合中的类</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="lambo">lambo</a>
     </p>
   <p class="article-time">
-    <time datetime="2017-12-15T17:00:03.000Z" itemprop="datePublished">2017-12-16</time>
-    更新日期:<time datetime="2017-12-18T05:00:02.527Z" itemprop="dateModified">2017-12-18</time>
+    <time datetime="2017-12-18T12:06:45.000Z" itemprop="datePublished">2017-12-18</time>
+    更新日期:<time datetime="2017-12-18T12:13:22.210Z" itemprop="dateModified">2017-12-18</time>
     
   </p>
 </header>
@@ -95,78 +97,54 @@ ArrayList alist2 = new Ar">
 		
 		</div>
 		
-		<ul>
-<li><p>插入元素</p>
-<blockquote>
-<p>逐条加入</p>
-<pre><code>ArrayList<string> alist = new ArrayList();
-alist.add("lambo");</string></code></pre>
-
-<p>在指定地点加入</p>
-<pre><code>alist.add(1,"lambo2")</code></pre>
-
-<p>将另一个ArrayList加入当前ArrayList</p>
-<pre><code>ArrayList alist2 = new ArrayList();
-alist2.add("lambos");
-alist.addAll(alist2);</code></pre>
-</blockquote>
+		<p><img src="http://img.blog.csdn.net/20171118231401688?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="集合中的类"></p>
+<ul>
+<li><p>Collection</p>
+<ul>
+<li>List：<ul>
+<li>LinkedList：可在任意位置进行高效地插入和删除操作的有序序列</li>
+<li>ArrayList：可动态增长和缩减的索引序列，有序序列</li>
+</ul>
 </li>
-<li><p>删除元素</p>
-<blockquote>
-<p>删除对应位置的内容</p>
-<pre><code>alist.remove(1);</code></pre>
-
-<p>删除整个ArrayList</p>
-<pre><code>alist.clear();</code></pre>
-
-<p>按照条件删除对应字段</p>
-<pre><code>alist.removeIf(str -> str.length() > 5)//这里删除的是长度5以上的字段，使用的是Lambda表达式，具体的Lambda以后在详细说明</code></pre>
-</blockquote>
+<li>Set：<ul>
+<li>HashSet：没有重复元素的无序集合<ul>
+<li>LinkedSet：可以记住元素插入次序的集合</li>
+</ul>
 </li>
-<li><p>遍历</p>
-<blockquote>
-<p>iterator遍历</p>
-<pre><code>Iterator it = alist.iterator();
-while (it.hasNext()) {
-   it.next();
-}</code></pre>
-
-<p>for循环遍历</p>
-<pre><code>for (int i = 0; i < alist.size(); i++) {
-       alist.get(i);
-   }</code></pre>
-
-<p>for each循环遍历</p>
-<pre><code>for (String s:alist) {
-       System.out.println(s);
-   }</code></pre>
-</blockquote>
+<li>EnumSet：包含枚举类型值的集合</li>
+<li>TreeSet：一种有序集合</li>
+</ul>
 </li>
-<li><p>总结</p>
-<blockquote>
-<p>ArrayList和LinkedList由于都是实现的List类，所以大部分操作都是类似的，熟悉了LinkedList的相关操作，ArrayList大部分也就都会了，但是这里要说明的这两个list的不同之处，方便在实际开发中进行选择</p>
-<blockquote>
-<p>ArrayList是<strong>基于索引的数据结构</strong>，通过索引来<strong>读取数据比较快</strong>，但ArrayList有个<strong>扩容操作</strong>，会消耗一定资源，并且对于<strong>添加和删除效率比较差</strong>，因为执行添加删除操作之后ArrayList要重新排布插入点或删除点后面的全部数据，越靠前，消耗越大。</p>
-<p>LinkedList是<strong>基于链表的数据结构</strong>，<strong>读取数据是比较慢</strong>，因为它要从第一个节点往后遍历，但是对于<strong>插入删除数据，LinkedList是比较快的</strong>，因为LinkedList的节点与节点之间是不连续的，是通过记录上一个节点和下一个节点将整个list串起来的，所以在执行插入删除操作时，只需要修改对应的上一个节点和下一个节点就好。</p>
-</blockquote>
-</blockquote>
+<li>Queue：<ul>
+<li>PriorityQueue：一种允许高效删除最小元素的集合，使用的数据结构是堆</li>
+</ul>
+</li>
+<li>ArrayDeque：一种用循环数组实现的双端队列</li>
+</ul>
+</li>
+<li><p>Map</p>
+<ul>
+<li>HashMap：一种存储键/值关联的数据结构<ul>
+<li>LinkedMap：一种可以记住键/值添加次序的映射表</li>
+</ul>
+</li>
+<li>TreeMap：一种键/值有序排列的映射表</li>
+<li>EnumMap：一种键/值属于枚举类型的映射表</li>
+<li>WeekHashMap：一种值无用武之地时可被垃圾回收机制回收的映射表</li>
+<li>IdentifyHashMap：一种用==而不是equals比较键/值的映射表</li>
+</ul>
 </li>
 </ul>
   
 	</div>
 		<footer class="article-footer clearfix">
 
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Java集合/">Java集合</a>
-  </div>
-
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2017/12/16/arraylist/" data-title="集合之--ArrayList操作 | lambo" data-tsina="" class="share clearfix">
+  <div data-url="http://yoursite.com/2017/12/18/集合中的类/" data-title="集合中的类 | lambo" data-tsina="" class="share clearfix">
   </div>
 
 </div>
@@ -175,14 +153,14 @@ while (it.hasNext()) {
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/12/18/LinkedList/" title="集合之--LinkedList操作">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  集合之--LinkedList操作</span>
+
+<div class="next">
+<a href="/2017/12/18/LinkedList/"  title="集合之--LinkedList操作">
+ <strong>NEXT:</strong><br/> 
+ <span>集合之--LinkedList操作
+</span>
 </a>
 </div>
-
 
 </nav>
 
