@@ -4,19 +4,14 @@
 <head>
   <meta charset="utf-8">
   
-  <title>集合之--ArrayList操作 | lambo</title>
+  <title>Tag: Java集合 | lambo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="插入元素  逐条加入 ArrayList alist = new ArrayList(); alist.add(&quot;lambo&quot;);  在指定地点加入 alist.add(1,&quot;lambo2&quot;)  将另一个ArrayList加入当前ArrayList ArrayList alist2 = new ArrayList(); alist2.add(&quot;lambos&quot;); alist.addAll(ali">
-<meta name="keywords" content="Java集合">
-<meta property="og:type" content="article">
-<meta property="og:title" content="集合之--ArrayList操作">
-<meta property="og:url" content="http://yoursite.com/2017/12/16/arraylist/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="lambo">
+<meta property="og:url" content="http://yoursite.com/tags/Java集合/index.html">
 <meta property="og:site_name" content="lambo">
-<meta property="og:description" content="插入元素  逐条加入 ArrayList alist = new ArrayList(); alist.add(&quot;lambo&quot;);  在指定地点加入 alist.add(1,&quot;lambo2&quot;)  将另一个ArrayList加入当前ArrayList ArrayList alist2 = new ArrayList(); alist2.add(&quot;lambos&quot;); alist.addAll(ali">
-<meta property="og:updated_time" content="2017-12-18T05:00:02.527Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="集合之--ArrayList操作">
-<meta name="twitter:description" content="插入元素  逐条加入 ArrayList alist = new ArrayList(); alist.add(&quot;lambo&quot;);  在指定地点加入 alist.add(1,&quot;lambo2&quot;)  将另一个ArrayList加入当前ArrayList ArrayList alist2 = new ArrayList(); alist2.add(&quot;lambos&quot;); alist.addAll(ali">
+<meta name="twitter:title" content="lambo">
   
     <link rel="alternative" href="/atom.xml" title="lambo" type="application/atom+xml">
   
@@ -68,130 +63,59 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main"><article id="post-arraylist" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/12/16/arraylist/" class="article-date">
-  <time datetime="2017-12-15T17:00:03.000Z" itemprop="datePublished">2017-12-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+      <section id="main">
   
-    <h1 class="article-title" itemprop="name">
-      集合之--ArrayList操作
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2017/12/18/LinkedList/" class="archive-article-date">
+  <time datetime="2017-12-18T01:38:51.000Z" itemprop="datePublished">Dec 18</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/12/18/LinkedList/">集合之--LinkedList操作</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li><p>插入元素</p>
-<blockquote>
-<p>逐条加入</p>
-<pre><code>ArrayList<string> alist = new ArrayList();
-alist.add("lambo");</string></code></pre>
-
-<p>在指定地点加入</p>
-<pre><code>alist.add(1,"lambo2")</code></pre>
-
-<p>将另一个ArrayList加入当前ArrayList</p>
-<pre><code>ArrayList alist2 = new ArrayList();
-alist2.add("lambos");
-alist.addAll(alist2);</code></pre>
-</blockquote>
-</li>
-<li><p>删除元素</p>
-<blockquote>
-<p>删除对应位置的内容</p>
-<pre><code>alist.remove(1);</code></pre>
-
-<p>删除整个ArrayList</p>
-<pre><code>alist.clear();</code></pre>
-
-<p>按照条件删除对应字段</p>
-<pre><code>alist.removeIf(str -> str.length() > 5)//这里删除的是长度5以上的字段，使用的是Lambda表达式，具体的Lambda以后在详细说明</code></pre>
-</blockquote>
-</li>
-<li><p>遍历</p>
-<blockquote>
-<p>iterator遍历</p>
-<pre><code>Iterator it = alist.iterator();
-while (it.hasNext()) {
-   it.next();
-}</code></pre>
-
-<p>for循环遍历</p>
-<pre><code>for (int i = 0; i < alist.size(); i++) {
-       alist.get(i);
-   }</code></pre>
-
-<p>for each循环遍历</p>
-<pre><code>for (String s:alist) {
-       System.out.println(s);
-   }</code></pre>
-</blockquote>
-</li>
-<li><p>总结</p>
-<blockquote>
-<p>ArrayList和LinkedList由于都是实现的List类，所以大部分操作都是类似的，熟悉了LinkedList的相关操作，ArrayList大部分也就都会了，但是这里要说明的这两个list的不同之处，方便在实际开发中进行选择</p>
-<blockquote>
-<p>ArrayList是<strong>基于索引的数据结构</strong>，通过索引来<strong>读取数据比较快</strong>，但ArrayList有个<strong>扩容操作</strong>，会消耗一定资源，并且对于<strong>添加和删除效率比较差</strong>，因为执行添加删除操作之后ArrayList要重新排布插入点或删除点后面的全部数据，越靠前，消耗越大。</p>
-<p>LinkedList是<strong>基于链表的数据结构</strong>，<strong>读取数据是比较慢</strong>，因为它要从第一个节点往后遍历，但是对于<strong>插入删除数据，LinkedList是比较快的</strong>，因为LinkedList的节点与节点之间是不连续的，是通过记录上一个节点和下一个节点将整个list串起来的，所以在执行插入删除操作时，只需要修改对应的上一个节点和下一个节点就好。</p>
-</blockquote>
-</blockquote>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjbbqex3c0001d8iv6odtco77" class="article-share-link" data-share="baidu" data-title="集合之--ArrayList操作">分享到</a>
-      
-
-      
-        <a href="http://yoursite.com/2017/12/16/arraylist/#ds-thread" class="article-comment-link">評論</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java集合/">Java集合</a></li></ul>
-
-    </footer>
+    </header>
   </div>
+</article>
   
     
-<nav id="article-nav">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2017/12/16/arraylist/" class="archive-article-date">
+  <time datetime="2017-12-15T17:00:03.000Z" itemprop="datePublished">Dec 16</time>
+</a>
+      
   
-    <a href="/2017/12/18/LinkedList/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">
-        
-          集合之--LinkedList操作
-        
-      </div>
-    </a>
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/12/16/arraylist/">集合之--ArrayList操作</a>
+    </h1>
   
-  
-    <a href="/2017/12/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
 
-  
+    </header>
+  </div>
 </article>
+  
+  
+    </div></section>
+  
 
-
-  <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="2017/12/16/arraylist/" data-title="集合之--ArrayList操作" data-url="http://yoursite.com/2017/12/16/arraylist/"></div>
-  </section>
 </section>
       
       <aside id="sidebar">
