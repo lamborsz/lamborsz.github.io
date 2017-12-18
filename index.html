@@ -65,6 +65,121 @@
     <div class="outer">
       <section id="main">
   
+    <article id="post-LinkedList" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/18/LinkedList/" class="article-date">
+  <time datetime="2017-12-18T01:38:51.000Z" itemprop="datePublished">2017-12-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/18/LinkedList/">LinkedList</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>插入元素</p>
+<blockquote>
+<p>逐条加入</p>
+<pre><code>LinkedList<string> list = new LinkedList<>();
+list.add("lambo");</string></code></pre>
+
+<p>在指定地点插入元素</p>
+<pre><code>LinkedList<string> list = new LinkedList<>();
+list.add(0,"lambo");</string></code></pre>
+
+<p>将另外一个LinkedList的内容添加到当前LinkedList中</p>
+<pre><code>LinkedList<string> list2 = new LinkedList<>();
+list2.addAll(list);
+</string></code></pre>
+在头部或者尾部加入元素
+<pre><code>LinkedList<string> list = new LinkedList<>();
+list.addFirst("lambo");
+list.addLast("lambosz");</string></code></pre>
+other
+<pre><code>LinkedList同样支持clone(),将一个LinkedList复制给另一个LinkedList
+list2 = (LinedList<string>) list.clone();</string></code></pre></blockquote>
+</li>
+<li>删除元素<blockquote>
+<p>移除指定位置的元素</p>
+  <pre><code>list.remove(0);</code></pre>
+清除整个LinkedList
+  <pre><code>list.clear();</code></pre>
+移除首部或尾部的元素
+  <pre><code>list.removeFirst();
+  list.removeLast();
+  </code></pre>
+移除第一个或最后一个值为指定值的元素
+  <pre><code>list.removeFirstOccurrence("lambo");
+  list.removeLastOccurrence("lambo");</code></pre></blockquote>
+</li>
+<li><p>遍历</p>
+<blockquote>
+<p>迭代器遍历</p>
+  <pre><code>LinkedList<integer> list = new LinkedList<>();
+  for(int i = 0;i < 10000 ;i++){
+      list.add(i);
+  }
+  Iterator<integer> iterator = list.iterator();
+  while(iterator.hasNext()){
+      iterator.next();
+  }</integer></integer></code></pre>
+for循环遍历
+  <pre><code>for(int j = 0;j<list.size();j++){ list.get(i);="" }<="" code=""></list.size();j++){></code></pre>
+for each循环遍历
+  <pre><code>for(Integer i:list){
+      list.get(i)
+  }</code></pre>
+其他遍历
+  <pre><code>LinkedList<integer> list2 = new LinkedList<>();
+  list2.addAll(list);
+  while(list2.size()!=0){
+      list2.pollFirst();
+  }//使用pollFirst()或者pollLast()来遍历</integer></code></pre>
+<pre><code>LinkedList<integer> list3 = new LinkedList<>();
+  list3.addAll(list);
+  while(list3.size()!=0){
+       list3.removeFirst();
+  }//使用removeFirst()或者removeLast()来遍历</integer></code></pre></blockquote>
+</li>
+<li><p>总结</p>
+<blockquote>
+<p>LinkedList包含了一个index和一个element，index用来指向位置，element用来存放内容，所以在插入删除的时候能通过index很快的找到插入删除点，<strong>可以实现高效地插入删除</strong>，并且每个element之间并不干扰，所以LinkedList的内容是<strong>可以重复的</strong>，并且有了index，所以同时它也是<strong>有序的</strong></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p>承接自我上一篇博客<a href="http://blog.csdn.net/Lamborghinsz/article/details/78580985" target="_blank" rel="noopener">集合中的类</a>，接下来会继续展开</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/18/LinkedList/" data-id="cjbbq09b700019givtp36qqox" class="article-share-link" data-share="baidu" data-title="LinkedList">Share</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/18/LinkedList/#ds-thread" class="article-comment-link">Comments</a>
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-arraylist" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/12/16/arraylist/" class="article-date">
@@ -149,7 +264,7 @@ while (it.hasNext()) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjbbj6msh0000t0ivr8cic2o7" class="article-share-link" data-share="baidu" data-title="集合之--ArrayList操作">Share</a>
+        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjbbq09al00009giv2zvsoz09" class="article-share-link" data-share="baidu" data-title="集合之--ArrayList操作">Share</a>
       
 
       
@@ -202,7 +317,7 @@ while (it.hasNext()) {
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjbbj6msq0001t0ivdxfi0ug1" class="article-share-link" data-share="baidu" data-title="Hello World">Share</a>
+        <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjbbq09bo00039givlgzjn37c" class="article-share-link" data-share="baidu" data-title="Hello World">Share</a>
       
 
       
@@ -246,7 +361,7 @@ while (it.hasNext()) {
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -256,6 +371,10 @@ while (it.hasNext()) {
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/12/18/LinkedList/">LinkedList</a>
+          </li>
         
           <li>
             <a href="/2017/12/16/arraylist/">集合之--ArrayList操作</a>

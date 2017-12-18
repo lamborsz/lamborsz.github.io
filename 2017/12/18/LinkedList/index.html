@@ -4,14 +4,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2017/12 | lambo</title>
+  <title>LinkedList | lambo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="lambo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/12/index.html">
+  <meta name="description" content="插入元素  逐条加入 LinkedList list = new LinkedList(); list.add(&quot;lambo&quot;);  在指定地点插入元素 LinkedList list = new LinkedList(); list.add(0,&quot;lambo&quot;);  将另外一个LinkedList的内容添加到当前LinkedList中 LinkedList list2 = new Linked">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LinkedList">
+<meta property="og:url" content="http://yoursite.com/2017/12/18/LinkedList/index.html">
 <meta property="og:site_name" content="lambo">
+<meta property="og:description" content="插入元素  逐条加入 LinkedList list = new LinkedList(); list.add(&quot;lambo&quot;);  在指定地点插入元素 LinkedList list = new LinkedList(); list.add(0,&quot;lambo&quot;);  将另外一个LinkedList的内容添加到当前LinkedList中 LinkedList list2 = new Linked">
+<meta property="og:updated_time" content="2017-12-18T04:48:19.907Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lambo">
+<meta name="twitter:title" content="LinkedList">
+<meta name="twitter:description" content="插入元素  逐条加入 LinkedList list = new LinkedList(); list.add(&quot;lambo&quot;);  在指定地点插入元素 LinkedList list = new LinkedList(); list.add(0,&quot;lambo&quot;);  将另外一个LinkedList的内容添加到当前LinkedList中 LinkedList list2 = new Linked">
   
     <link rel="alternative" href="/atom.xml" title="lambo" type="application/atom+xml">
   
@@ -63,78 +67,135 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/12/18/LinkedList/" class="archive-article-date">
-  <time datetime="2017-12-18T01:38:51.000Z" itemprop="datePublished">Dec 18</time>
+      <section id="main"><article id="post-LinkedList" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/18/LinkedList/" class="article-date">
+  <time datetime="2017-12-18T01:38:51.000Z" itemprop="datePublished">2017-12-18</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/18/LinkedList/">LinkedList</a>
+    <h1 class="article-title" itemprop="name">
+      LinkedList
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/12/16/arraylist/" class="archive-article-date">
-  <time datetime="2017-12-15T17:00:03.000Z" itemprop="datePublished">Dec 16</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/16/arraylist/">集合之--ArrayList操作</a>
-    </h1>
-  
+        <ul>
+<li><p>插入元素</p>
+<blockquote>
+<p>逐条加入</p>
+<pre><code>LinkedList<string> list = new LinkedList<>();
+list.add("lambo");</string></code></pre>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/12/15/hello-world/" class="archive-article-date">
-  <time datetime="2017-12-15T13:31:24.193Z" itemprop="datePublished">Dec 15</time>
-</a>
+<p>在指定地点插入元素</p>
+<pre><code>LinkedList<string> list = new LinkedList<>();
+list.add(0,"lambo");</string></code></pre>
+
+<p>将另外一个LinkedList的内容添加到当前LinkedList中</p>
+<pre><code>LinkedList<string> list2 = new LinkedList<>();
+list2.addAll(list);
+</string></code></pre>
+在头部或者尾部加入元素
+<pre><code>LinkedList<string> list = new LinkedList<>();
+list.addFirst("lambo");
+list.addLast("lambosz");</string></code></pre>
+other
+<pre><code>LinkedList同样支持clone(),将一个LinkedList复制给另一个LinkedList
+list2 = (LinedList<string>) list.clone();</string></code></pre></blockquote>
+</li>
+<li>删除元素<blockquote>
+<p>移除指定位置的元素</p>
+  <pre><code>list.remove(0);</code></pre>
+清除整个LinkedList
+  <pre><code>list.clear();</code></pre>
+移除首部或尾部的元素
+  <pre><code>list.removeFirst();
+  list.removeLast();
+  </code></pre>
+移除第一个或最后一个值为指定值的元素
+  <pre><code>list.removeFirstOccurrence("lambo");
+  list.removeLastOccurrence("lambo");</code></pre></blockquote>
+</li>
+<li><p>遍历</p>
+<blockquote>
+<p>迭代器遍历</p>
+  <pre><code>LinkedList<integer> list = new LinkedList<>();
+  for(int i = 0;i < 10000 ;i++){
+      list.add(i);
+  }
+  Iterator<integer> iterator = list.iterator();
+  while(iterator.hasNext()){
+      iterator.next();
+  }</integer></integer></code></pre>
+for循环遍历
+  <pre><code>for(int j = 0;j<list.size();j++){ list.get(i);="" }<="" code=""></list.size();j++){></code></pre>
+for each循环遍历
+  <pre><code>for(Integer i:list){
+      list.get(i)
+  }</code></pre>
+其他遍历
+  <pre><code>LinkedList<integer> list2 = new LinkedList<>();
+  list2.addAll(list);
+  while(list2.size()!=0){
+      list2.pollFirst();
+  }//使用pollFirst()或者pollLast()来遍历</integer></code></pre>
+<pre><code>LinkedList<integer> list3 = new LinkedList<>();
+  list3.addAll(list);
+  while(list3.size()!=0){
+       list3.removeFirst();
+  }//使用removeFirst()或者removeLast()来遍历</integer></code></pre></blockquote>
+</li>
+<li><p>总结</p>
+<blockquote>
+<p>LinkedList包含了一个index和一个element，index用来指向位置，element用来存放内容，所以在插入删除的时候能通过index很快的找到插入删除点，<strong>可以实现高效地插入删除</strong>，并且每个element之间并不干扰，所以LinkedList的内容是<strong>可以重复的</strong>，并且有了index，所以同时它也是<strong>有序的</strong></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p>承接自我上一篇博客<a href="http://blog.csdn.net/Lamborghinsz/article/details/78580985" target="_blank" rel="noopener">集合中的类</a>，接下来会继续展开</p>
+
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/15/hello-world/">Hello World</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/18/LinkedList/" data-id="cjbbq09b700019givtp36qqox" class="article-share-link" data-share="baidu" data-title="LinkedList">Share</a>
+      
 
-    </header>
+      
+        <a href="http://yoursite.com/2017/12/18/LinkedList/#ds-thread" class="article-comment-link">Comments</a>
+      
+
+      
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/12/16/arraylist/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">集合之--ArrayList操作</div>
+    </a>
   
+</nav>
 
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2017/12/18/LinkedList/" data-title="LinkedList" data-url="http://yoursite.com/2017/12/18/LinkedList/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">
