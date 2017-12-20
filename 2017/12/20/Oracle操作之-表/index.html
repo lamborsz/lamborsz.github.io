@@ -10,7 +10,6 @@
     <meta name="author" content="lambo">
     
     <meta name="description" content="Oracle操作之–表
-
 创建：
 
 创建一个userinfo表，里面的字段有id,username,userpasswd
@@ -18,7 +17,7 @@ create table userinfo
 (id number(6,0),
 username varchar2(20),
 userpasswd varchar2(20)
-red">
+reda">
     
     
     
@@ -82,7 +81,7 @@ red">
     </p>
   <p class="article-time">
     <time datetime="2017-12-20T04:30:29.000Z" itemprop="datePublished">2017-12-20</time>
-    Updated:<time datetime="2017-12-20T04:35:30.581Z" itemprop="dateModified">2017-12-20</time>
+    Updated:<time datetime="2017-12-20T04:37:45.898Z" itemprop="dateModified">2017-12-20</time>
     
   </p>
 </header>
@@ -91,62 +90,10 @@ red">
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;<p></p>
-<ul>
-<li><p>&#x521B;&#x5EFA;&#xFF1A;</p>
-<blockquote>
-<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;userinfo&#x8868;&#xFF0C;&#x91CC;&#x9762;&#x7684;&#x5B57;&#x6BB5;&#x6709;id,username,userpasswd</p>
-<pre><code>create table userinfo
-(id number(6,0),
-username varchar2(20),
-userpasswd varchar2(20)
-redate date);</code></pre>
-
-<p>&#x521B;&#x5EFA;&#x8868;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x6765;&#x6307;&#x5B9A;&#x8868;&#x7684;&#x8868;&#x7A7A;&#x95F4;<br><pre><code>create table userinfo2<br>(id number(6,0),<br>username varchar2(20),<br>userpasswd varchar2(20) tablespace sys);</code></pre><br><br>&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x8868;&#x7A7A;&#x95F4;&#xFF0C;&#x521B;&#x5EFA;&#x7684;&#x8868;&#x5C06;&#x9ED8;&#x8BA4;&#x4E3A;system&#x8868;&#x7A7A;&#x95F4;<br><br><br>&#x82E5;&#x521B;&#x5EFA;&#x8868;&#x540E;&#x60F3;&#x77E5;&#x9053;&#x8BE5;&#x8868;&#x6709;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;desc userinfo&#x67E5;&#x8BE2;<br></p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li><p>&#x4FEE;&#x6539;&#xFF1A;</p>
-<blockquote>
-<p>&#x4FEE;&#x6539;&#x8868;&#x540D;</p>
-<pre><code>rename userinfo to new_userinfo</code></pre>
-
-<p>&#x4FEE;&#x6539;&#x8868;&#x7684;&#x5B57;&#x6BB5;&#x540D;</p>
-<pre><code>alter table userinfo
-rename column id to new_id;</code></pre>
-
-<p>&#x5728;userinfo&#x8868;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;remarks&#x5B57;&#x6BB5;</p>
-<pre><code>alter table userinfo
-add remarks varchar2(500);</code></pre>
-
-<p>&#x4FEE;&#x6539;remarks&#x5B57;&#x6BB5;&#x7684;&#x957F;&#x5EA6;</p>
-<pre><code>alter table userinfo
-modify remarks varchar2(400);</code></pre>
-</blockquote>
-</li>
-<li><p>&#x5220;&#x9664;&#xFF1A;</p>
-<blockquote>
-<p>&#x5220;&#x9664;&#x5B57;&#x6BB5;</p>
-<pre><code>&#x5220;&#x9664;userinfo&#x8868;&#x4E2D;&#x7684;remarks&#x5B57;&#x6BB5;
-  alter table userinfo
-drop column remarks;</code></pre>
-
-<blockquote>
-<p>&#x5220;&#x9664;&#x8868;<br>&#x8868;&#x7684;&#x622A;&#x65AD;,&#x5373;&#x5220;&#x6389;&#x8868;&#x4E2D;&#x7684;&#x5168;&#x90E8;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x8868;&#x8FD8;&#x5B58;&#x5728;</p>
-<pre><code>truncate table userinfo</code></pre>
-
-<p>&#x8868;&#x7684;&#x5220;&#x9664;</p>
-<pre><code>drop table userinfo</code></pre>
-</blockquote>
-</blockquote>
-</li>
-</ul>
-</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Oracle操作之–表"><span class="toc-number">1.</span> <span class="toc-text"><a href="#Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;" class="headerlink" title="Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;"></a>Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;</span></a></li></ol>
 		</div>
 		
-		<p></p><h1>Oracle操作之–表<p></p>
-<ul>
+		<h2 id="Oracle操作之–表"><a href="#Oracle操作之–表" class="headerlink" title="Oracle操作之–表"></a>Oracle操作之–表</h2><ul>
 <li><p>创建：</p>
 <blockquote>
 <p>创建一个userinfo表，里面的字段有id,username,userpasswd</p>
@@ -196,7 +143,7 @@ drop column remarks;</code></pre>
 </blockquote>
 </li>
 </ul>
-</h1>  
+  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -236,58 +183,7 @@ drop column remarks;</code></pre>
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
-  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;<p></p>
-<ul>
-<li><p>&#x521B;&#x5EFA;&#xFF1A;</p>
-<blockquote>
-<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;userinfo&#x8868;&#xFF0C;&#x91CC;&#x9762;&#x7684;&#x5B57;&#x6BB5;&#x6709;id,username,userpasswd</p>
-<pre><code>create table userinfo
-(id number(6,0),
-username varchar2(20),
-userpasswd varchar2(20)
-redate date);</code></pre>
-
-<p>&#x521B;&#x5EFA;&#x8868;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x6765;&#x6307;&#x5B9A;&#x8868;&#x7684;&#x8868;&#x7A7A;&#x95F4;<br><pre><code>create table userinfo2<br>(id number(6,0),<br>username varchar2(20),<br>userpasswd varchar2(20) tablespace sys);</code></pre><br><br>&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x8868;&#x7A7A;&#x95F4;&#xFF0C;&#x521B;&#x5EFA;&#x7684;&#x8868;&#x5C06;&#x9ED8;&#x8BA4;&#x4E3A;system&#x8868;&#x7A7A;&#x95F4;<br><br><br>&#x82E5;&#x521B;&#x5EFA;&#x8868;&#x540E;&#x60F3;&#x77E5;&#x9053;&#x8BE5;&#x8868;&#x6709;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;desc userinfo&#x67E5;&#x8BE2;<br></p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li><p>&#x4FEE;&#x6539;&#xFF1A;</p>
-<blockquote>
-<p>&#x4FEE;&#x6539;&#x8868;&#x540D;</p>
-<pre><code>rename userinfo to new_userinfo</code></pre>
-
-<p>&#x4FEE;&#x6539;&#x8868;&#x7684;&#x5B57;&#x6BB5;&#x540D;</p>
-<pre><code>alter table userinfo
-rename column id to new_id;</code></pre>
-
-<p>&#x5728;userinfo&#x8868;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;remarks&#x5B57;&#x6BB5;</p>
-<pre><code>alter table userinfo
-add remarks varchar2(500);</code></pre>
-
-<p>&#x4FEE;&#x6539;remarks&#x5B57;&#x6BB5;&#x7684;&#x957F;&#x5EA6;</p>
-<pre><code>alter table userinfo
-modify remarks varchar2(400);</code></pre>
-</blockquote>
-</li>
-<li><p>&#x5220;&#x9664;&#xFF1A;</p>
-<blockquote>
-<p>&#x5220;&#x9664;&#x5B57;&#x6BB5;</p>
-<pre><code>&#x5220;&#x9664;userinfo&#x8868;&#x4E2D;&#x7684;remarks&#x5B57;&#x6BB5;
-  alter table userinfo
-drop column remarks;</code></pre>
-
-<blockquote>
-<p>&#x5220;&#x9664;&#x8868;<br>&#x8868;&#x7684;&#x622A;&#x65AD;,&#x5373;&#x5220;&#x6389;&#x8868;&#x4E2D;&#x7684;&#x5168;&#x90E8;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x8868;&#x8FD8;&#x5B58;&#x5728;</p>
-<pre><code>truncate table userinfo</code></pre>
-
-<p>&#x8868;&#x7684;&#x5220;&#x9664;</p>
-<pre><code>drop table userinfo</code></pre>
-</blockquote>
-</blockquote>
-</li>
-</ul>
-</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Oracle操作之–表"><span class="toc-number">1.</span> <span class="toc-text"><a href="#Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;" class="headerlink" title="Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;"></a>Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;</span></a></li></ol>
   </div>
 
 <div id="asidepart">
