@@ -4,22 +4,21 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>集合之--LinkedList操作 | lambo</title>
+    <title>Oracle操作之--表 | lambo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="lambo">
     
-    <meta name="description" content="插入元素
+    <meta name="description" content="Oracle操作之–表
 
-逐条加入
-LinkedList list = new LinkedList();
-list.add(&#34;lambo&#34;);
+创建：
 
-在指定地点插入元素
-LinkedList list = new LinkedList();
-list.add(0,&#34;lambo&#34;);
-
-将另外一个LinkedList">
+创建一个userinfo表，里面的字段有id,username,userpasswd
+create table userinfo
+(id number(6,0),
+username varchar2(20),
+userpasswd varchar2(20)
+red">
     
     
     
@@ -75,15 +74,15 @@ list.add(0,&#34;lambo&#34;);
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/12/18/LinkedList/" title="集合之--LinkedList操作" itemprop="url">集合之--LinkedList操作</a>
+      <a href="/2017/12/20/Oracle操作之-表/" title="Oracle操作之--表" itemprop="url">Oracle操作之--表</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="lambo">lambo</a>
     </p>
   <p class="article-time">
-    <time datetime="2017-12-18T01:38:51.000Z" itemprop="datePublished">2017-12-18</time>
-    Updated:<time datetime="2017-12-18T05:00:00.799Z" itemprop="dateModified">2017-12-18</time>
+    <time datetime="2017-12-20T04:30:29.000Z" itemprop="datePublished">2017-12-20</time>
+    Updated:<time datetime="2017-12-20T04:35:30.581Z" itemprop="dateModified">2017-12-20</time>
     
   </p>
 </header>
@@ -92,99 +91,118 @@ list.add(0,&#34;lambo&#34;);
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
-		
-		</div>
-		
-		<ul>
-<li><p>插入元素</p>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;<p></p>
+<ul>
+<li><p>&#x521B;&#x5EFA;&#xFF1A;</p>
 <blockquote>
-<p>逐条加入</p>
-<pre><code>LinkedList<string> list = new LinkedList<>();
-list.add("lambo");</string></code></pre>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;userinfo&#x8868;&#xFF0C;&#x91CC;&#x9762;&#x7684;&#x5B57;&#x6BB5;&#x6709;id,username,userpasswd</p>
+<pre><code>create table userinfo
+(id number(6,0),
+username varchar2(20),
+userpasswd varchar2(20)
+redate date);</code></pre>
 
-<p>在指定地点插入元素</p>
-<pre><code>LinkedList<string> list = new LinkedList<>();
-list.add(0,"lambo");</string></code></pre>
-
-<p>将另外一个LinkedList的内容添加到当前LinkedList中</p>
-<pre><code>LinkedList<string> list2 = new LinkedList<>();
-list2.addAll(list);
-</string></code></pre>
-
-<p>在头部或者尾部加入元素</p>
-<pre><code>LinkedList<string> list = new LinkedList<>();
-list.addFirst("lambo");
-list.addLast("lambosz");</string></code></pre>
-
-<p>other</p>
-<pre><code>LinkedList同样支持clone(),将一个LinkedList复制给另一个LinkedList
-list2 = (LinedList<string>) list.clone();</string></code></pre>
-</blockquote>
-</li>
-<li><p>删除元素</p>
-<blockquote>
-<p>移除指定位置的元素</p>
-  <pre><code>list.remove(0);</code></pre>
-
-<p>清除整个LinkedList</p>
-  <pre><code>list.clear();</code></pre>
-
-<p>移除首部或尾部的元素</p>
-  <pre><code>list.removeFirst();
-  list.removeLast();</code></pre>
-
-<p>移除第一个或最后一个值为指定值的元素</p>
-  <pre><code>list.removeFirstOccurrence("lambo");
-  list.removeLastOccurrence("lambo");</code></pre></blockquote>
-</li>
-<li><p>遍历</p>
-<blockquote>
-<p>迭代器遍历</p>
-  <pre><code>LinkedList<integer> list = new LinkedList<>();
-  for(int i = 0;i < 10000 ;i++){
-      list.add(i);
-  }
-  Iterator<integer> iterator = list.iterator();
-  while(iterator.hasNext()){
-      iterator.next();
-  }</integer></integer></code></pre>
-
-<p>for循环遍历</p>
-  <pre><code>for(int j = 0;j<list.size();j++){ list.get(i);="" }<="" code=""></list.size();j++){></code></pre>
-
-<p>for each循环遍历</p>
-  <pre><code>for(Integer i:list){
-      list.get(i)
-  }</code></pre>
-
-<p>其他遍历</p>
-  <pre><code>LinkedList<integer> list2 = new LinkedList<>();
-  list2.addAll(list);
-  while(list2.size()!=0){
-      list2.pollFirst();
-  }//使用pollFirst()或者pollLast()来遍历</integer></code></pre>
-<pre><code>LinkedList<integer> list3 = new LinkedList<>();
-  list3.addAll(list);
-  while(list3.size()!=0){
-       list3.removeFirst();
-  }//使用removeFirst()或者removeLast()来遍历</integer></code></pre>
-</blockquote>
-</li>
-<li><p>总结</p>
-<blockquote>
-<p>LinkedList包含了一个index和一个element，index用来指向位置，element用来存放内容，所以在插入删除的时候能通过index很快的找到插入删除点，<strong>可以实现高效地插入删除</strong>，并且每个element之间并不干扰，所以LinkedList的内容是<strong>可以重复的</strong>，并且有了index，所以同时它也是<strong>有序的</strong></p>
+<p>&#x521B;&#x5EFA;&#x8868;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x6765;&#x6307;&#x5B9A;&#x8868;&#x7684;&#x8868;&#x7A7A;&#x95F4;<br><pre><code>create table userinfo2<br>(id number(6,0),<br>username varchar2(20),<br>userpasswd varchar2(20) tablespace sys);</code></pre><br><br>&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x8868;&#x7A7A;&#x95F4;&#xFF0C;&#x521B;&#x5EFA;&#x7684;&#x8868;&#x5C06;&#x9ED8;&#x8BA4;&#x4E3A;system&#x8868;&#x7A7A;&#x95F4;<br><br><br>&#x82E5;&#x521B;&#x5EFA;&#x8868;&#x540E;&#x60F3;&#x77E5;&#x9053;&#x8BE5;&#x8868;&#x6709;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;desc userinfo&#x67E5;&#x8BE2;<br></p>
 </blockquote>
 </li>
 </ul>
-<hr>
-<p>承接自我上一篇博客<a href="http://blog.csdn.net/Lamborghinsz/article/details/78580985" target="_blank" rel="noopener">集合中的类</a>，接下来会继续展开</p>
-  
+<ul>
+<li><p>&#x4FEE;&#x6539;&#xFF1A;</p>
+<blockquote>
+<p>&#x4FEE;&#x6539;&#x8868;&#x540D;</p>
+<pre><code>rename userinfo to new_userinfo</code></pre>
+
+<p>&#x4FEE;&#x6539;&#x8868;&#x7684;&#x5B57;&#x6BB5;&#x540D;</p>
+<pre><code>alter table userinfo
+rename column id to new_id;</code></pre>
+
+<p>&#x5728;userinfo&#x8868;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;remarks&#x5B57;&#x6BB5;</p>
+<pre><code>alter table userinfo
+add remarks varchar2(500);</code></pre>
+
+<p>&#x4FEE;&#x6539;remarks&#x5B57;&#x6BB5;&#x7684;&#x957F;&#x5EA6;</p>
+<pre><code>alter table userinfo
+modify remarks varchar2(400);</code></pre>
+</blockquote>
+</li>
+<li><p>&#x5220;&#x9664;&#xFF1A;</p>
+<blockquote>
+<p>&#x5220;&#x9664;&#x5B57;&#x6BB5;</p>
+<pre><code>&#x5220;&#x9664;userinfo&#x8868;&#x4E2D;&#x7684;remarks&#x5B57;&#x6BB5;
+  alter table userinfo
+drop column remarks;</code></pre>
+
+<blockquote>
+<p>&#x5220;&#x9664;&#x8868;<br>&#x8868;&#x7684;&#x622A;&#x65AD;,&#x5373;&#x5220;&#x6389;&#x8868;&#x4E2D;&#x7684;&#x5168;&#x90E8;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x8868;&#x8FD8;&#x5B58;&#x5728;</p>
+<pre><code>truncate table userinfo</code></pre>
+
+<p>&#x8868;&#x7684;&#x5220;&#x9664;</p>
+<pre><code>drop table userinfo</code></pre>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</span></a></li></ol>
+		</div>
+		
+		<p></p><h1>Oracle操作之–表<p></p>
+<ul>
+<li><p>创建：</p>
+<blockquote>
+<p>创建一个userinfo表，里面的字段有id,username,userpasswd</p>
+<pre><code>create table userinfo
+(id number(6,0),
+username varchar2(20),
+userpasswd varchar2(20)
+redate date);</code></pre>
+
+<p>创建表的时候可以自己来指定表的表空间<br><pre><code>create table userinfo2<br>(id number(6,0),<br>username varchar2(20),<br>userpasswd varchar2(20) tablespace sys);</code></pre><br><br>如果不指定表空间，创建的表将默认为system表空间<br><br><br>若创建表后想知道该表有哪些字段，可以使用desc userinfo查询<br></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>修改：</p>
+<blockquote>
+<p>修改表名</p>
+<pre><code>rename userinfo to new_userinfo</code></pre>
+
+<p>修改表的字段名</p>
+<pre><code>alter table userinfo
+rename column id to new_id;</code></pre>
+
+<p>在userinfo表中添加一个remarks字段</p>
+<pre><code>alter table userinfo
+add remarks varchar2(500);</code></pre>
+
+<p>修改remarks字段的长度</p>
+<pre><code>alter table userinfo
+modify remarks varchar2(400);</code></pre>
+</blockquote>
+</li>
+<li><p>删除：</p>
+<blockquote>
+<p>删除字段</p>
+<pre><code>删除userinfo表中的remarks字段
+  alter table userinfo
+drop column remarks;</code></pre>
+
+<blockquote>
+<p>删除表<br>表的截断,即删掉表中的全部数据，但是表还存在</p>
+<pre><code>truncate table userinfo</code></pre>
+
+<p>表的删除</p>
+<pre><code>drop table userinfo</code></pre>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</h1>  
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Java集合/">Java集合</a>
+  <span></span> <a href="/tags/Oracle/">Oracle</a>
   </div>
 
 
@@ -192,7 +210,7 @@ list2 = (LinedList<string>) list.clone();</string></code></pre>
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2017/12/18/LinkedList/" data-title="集合之--LinkedList操作 | lambo" data-tsina="" class="share clearfix">
+  <div data-url="http://yoursite.com/2017/12/20/Oracle操作之-表/" data-title="Oracle操作之--表 | lambo" data-tsina="" class="share clearfix">
   </div>
 
 </div>
@@ -201,19 +219,11 @@ list2 = (LinedList<string>) list.clone();</string></code></pre>
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/12/18/集合中的类/" title="集合中的类">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  集合中的类</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2017/12/16/arraylist/"  title="集合之--ArrayList操作">
+<a href="/2017/12/18/集合中的类/"  title="集合中的类">
  <strong>NEXT:</strong><br/> 
- <span>集合之--ArrayList操作
+ <span>集合中的类
 </span>
 </a>
 </div>
@@ -226,7 +236,58 @@ list2 = (LinedList<string>) list.clone();</string></code></pre>
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
-  
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">Oracle&#x64CD;&#x4F5C;&#x4E4B;&#x2013;&#x8868;<p></p>
+<ul>
+<li><p>&#x521B;&#x5EFA;&#xFF1A;</p>
+<blockquote>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;userinfo&#x8868;&#xFF0C;&#x91CC;&#x9762;&#x7684;&#x5B57;&#x6BB5;&#x6709;id,username,userpasswd</p>
+<pre><code>create table userinfo
+(id number(6,0),
+username varchar2(20),
+userpasswd varchar2(20)
+redate date);</code></pre>
+
+<p>&#x521B;&#x5EFA;&#x8868;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x6765;&#x6307;&#x5B9A;&#x8868;&#x7684;&#x8868;&#x7A7A;&#x95F4;<br><pre><code>create table userinfo2<br>(id number(6,0),<br>username varchar2(20),<br>userpasswd varchar2(20) tablespace sys);</code></pre><br><br>&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x8868;&#x7A7A;&#x95F4;&#xFF0C;&#x521B;&#x5EFA;&#x7684;&#x8868;&#x5C06;&#x9ED8;&#x8BA4;&#x4E3A;system&#x8868;&#x7A7A;&#x95F4;<br><br><br>&#x82E5;&#x521B;&#x5EFA;&#x8868;&#x540E;&#x60F3;&#x77E5;&#x9053;&#x8BE5;&#x8868;&#x6709;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;desc userinfo&#x67E5;&#x8BE2;<br></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>&#x4FEE;&#x6539;&#xFF1A;</p>
+<blockquote>
+<p>&#x4FEE;&#x6539;&#x8868;&#x540D;</p>
+<pre><code>rename userinfo to new_userinfo</code></pre>
+
+<p>&#x4FEE;&#x6539;&#x8868;&#x7684;&#x5B57;&#x6BB5;&#x540D;</p>
+<pre><code>alter table userinfo
+rename column id to new_id;</code></pre>
+
+<p>&#x5728;userinfo&#x8868;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;remarks&#x5B57;&#x6BB5;</p>
+<pre><code>alter table userinfo
+add remarks varchar2(500);</code></pre>
+
+<p>&#x4FEE;&#x6539;remarks&#x5B57;&#x6BB5;&#x7684;&#x957F;&#x5EA6;</p>
+<pre><code>alter table userinfo
+modify remarks varchar2(400);</code></pre>
+</blockquote>
+</li>
+<li><p>&#x5220;&#x9664;&#xFF1A;</p>
+<blockquote>
+<p>&#x5220;&#x9664;&#x5B57;&#x6BB5;</p>
+<pre><code>&#x5220;&#x9664;userinfo&#x8868;&#x4E2D;&#x7684;remarks&#x5B57;&#x6BB5;
+  alter table userinfo
+drop column remarks;</code></pre>
+
+<blockquote>
+<p>&#x5220;&#x9664;&#x8868;<br>&#x8868;&#x7684;&#x622A;&#x65AD;,&#x5373;&#x5220;&#x6389;&#x8868;&#x4E2D;&#x7684;&#x5168;&#x90E8;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x8868;&#x8FD8;&#x5B58;&#x5728;</p>
+<pre><code>truncate table userinfo</code></pre>
+
+<p>&#x8868;&#x7684;&#x5220;&#x9664;</p>
+<pre><code>drop table userinfo</code></pre>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</span></a></li></ol>
   </div>
 
 <div id="asidepart">
