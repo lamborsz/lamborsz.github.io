@@ -1,305 +1,875 @@
 
- <!DOCTYPE HTML>
-<html >
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   
-    <title>lambo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-    
-    <meta name="author" content="lambo">
-    
-    
-    
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/pacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
-    
-    <link rel="stylesheet" href="/css/style.css">
+  <title>lambo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="lambo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="lambo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="lambo">
+  
+    <link rel="alternative" href="/atom.xml" title="lambo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
 </head>
-
-  <body>
-    <header>
-      <div>
-		
-			<div id="imglogo">
-				<a href="/"><img src="/img/logo.svg" alt="lambo" title="lambo"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="lambo">lambo</a></h1>
-				<h2 class="blog-motto"></h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					
-						<li><a href="/">Home</a></li>
-					
-						<li><a href="/archives">Archives</a></li>
-					
-					<li>
-					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
-						<input type="hidden" name="q" value="site:yoursite.com">
-					</form>
-					
-					</li>
-				</ul>
-			</nav>			
-</div>
-
-    </header>
-    <div id="container">
-      <div id="main">
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2017/12/20/Collection源码翻译/" title="Collection源码翻译" itemprop="url">
-  
-    <h1 itemprop="name">Collection源码翻译</h1>
-    
-     
-           <p itemprop="description" >int size()
-Returns the number of elements in this collection. If this collection contains more than Integer.MAX_VALUE elements, returns Inte</p>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">lambo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-    
-    <time datetime="2017-12-20T05:36:19.000Z" itemprop="datePublished">2017-12-20</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2017/12/20/Oracle操作之-表空间/" title="Oracle操作之--表空间" itemprop="url">
-  
-    <h1 itemprop="name">Oracle操作之--表空间</h1>
-    
-     
-           <p itemprop="description" >创建表空间：
-create tablespace spacename//表空间名字 datafile &#39;filename.dbf&#39;//数据文件名字 size 10M;
-
-创建完成后查询：
-select tablespace_name from dba_tablespaces wh</p>
+          <a class="main-nav-link" href="/">Home</a>
         
-    
-    <time datetime="2017-12-20T04:42:01.000Z" itemprop="datePublished">2017-12-20</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="yoursite.com">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main">
   
-    <a href="/2017/12/20/Oracle操作之-表/" title="Oracle操作之--表" itemprop="url">
-  
-    <h1 itemprop="name">Oracle操作之--表</h1>
+    <article id="post-Collection源码翻译" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/20/Collection源码翻译/" class="article-date">
+  <time datetime="2017-12-20T05:36:19.000Z" itemprop="datePublished">2017-12-20</time>
+</a>
     
-     
-           <p itemprop="description" >创建：
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/20/Collection源码翻译/">Collection源码翻译</a>
+    </h1>
+  
 
-创建一个userinfo表，里面的字段有id,username,userpasswd
-create table userinfo
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>int size()</p>
+<pre><code>Returns the number of elements in this collection. If this collection contains more than <tt>Integer.MAX_VALUE</tt> elements, returns <tt>Integer.MAX_VALUE</tt></code></pre>
+
+<pre><code>return the number of elements in this collection</code></pre>
+
+<pre><code>返回collection中元素的个数,若这个collection包含超过Integer.MAX_VALUE这个常量的元素，则返回Integer.MAX_VALUE</code></pre>
+
+<pre><code>返回值：这个collection的元素个数</code></pre>
+</li>
+<li><p>boolean isEmpty()</p>
+<pre><code>Returns <tt>true</tt> if this collection contains no elements.</code></pre>
+
+<pre><code>return <tt>true</tt> if this collection contains no elements</code></pre>
+
+<pre><code>当该collection没有元素的时候返回true</code></pre>
+
+<pre><code>返回值：当该collection没有包含元素的时候返回true</code></pre>
+</li>
+<li><p>boolean contains(Object o)</p>
+<pre><code>Returns <tt>true</tt> if this collection contains the specified element. More formally, returns <tt>true</tt> if and only if this collection contains at least one element <tt>e</tt> such that <tt>(o==null&nbsp;?&nbsp;e==null&nbsp;:&nbsp;o.equals(e))</tt>.</code></pre>
+
+<pre><code>param **o** element whose presence in this collection is to be tested</code></pre>
+
+<pre><code>return <tt>true</tt> if this collection contains the specified element</code></pre>
+
+<pre><code>throws **ClassCastException** if the type of the specified element is incompatible with this collection</code></pre>
+
+<pre><code>throws **NullPointerException** if the specified element is null and this collection does not permit null elements</code></pre>
+
+<pre><code>当该collection包含特定的元素时返回true,正式的说法是，当且仅当该collection至少包含一个满足下列条件的e元素</code></pre>
+
+<pre><code>当o和e同时满足为null时为true，或者o!=null,且o.equals(e)为true则为true</code></pre>
+
+<pre><code>参数:o 是一个存在于该collection中被测试的元素</code></pre>
+
+<pre><code>返回值：当该collection包含这个规定的元素时，返回true</code></pre>
+
+<blockquote>
+<p>异常抛出：</p>
+<blockquote>
+<p><strong>ClassCastException</strong> 当这个规定的元素的类型与该collection的类型不相符时抛</p>
+<p><strong>NullPointerException</strong> 当这个规定的元素是null并且该collection并没有允许null元素时抛出</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>Iterator<figure class="highlight plain"><figcaption><span>iterator();</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br></pre></td><td class="code"><pre><span class="line">&lt;pre&gt;&lt;code&gt;Returns an iterator over the elements in this collection.  There are no guarantees concerning the order in which the elements are returned (unless this collection is an instance of some class that provides a guarantee).&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;return an &lt;tt&gt;Iterator&lt;/tt&gt; over the elements in this collection&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;返回collection中元素的迭代器，没有关于元素返回顺序的保证，除非该collection是某些提供保证的类的实例&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;返回值：一个该collection元素的迭代器&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">*	Object[] toArray()</span><br><span class="line">&lt;pre&gt;&lt;code&gt;Returns an array containing all of the elements in this collection. If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order.&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;The returned array will be &quot;safe&quot; in that no references to it are maintained by this collection.  (In other words, this method must allocate a new array even if this collection is backed by an array). The caller is thus free to modify the returned array.&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;This method acts as bridge between array-based and collection-based APIs.&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;return an array containing all of the elements in this collection&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;返回包含此集合中所有元素的数组，如果这个集合保证了它的迭代器返回的元素顺序，这个方法必须以同样相同的顺序返回元素。&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;返回的数组是安全的，因为这个集合没有引用它，（换句话说，即使这个集合是由数组支持的，这个方法也必须分配一个新的数组），调用者可以自由修改返回的数组。&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;这个方法充当着基于数组和基于集合的API之间的桥梁&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;返回值：一个包含该collection全部元素是数组&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">*	```&lt;T&gt;``` T[] toArray(T[] a)</span><br><span class="line">&lt;pre&gt;&lt;code&gt;Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array. If the collection fits in the specified array, it is returned therein. Otherwise, a new array is allocated with the runtime type of the specified array and the size of this collection.&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;If this collection fits in the specified array with room to spare (i.e., the array has more elements than this collection), the element in the array immediately following the end of the collection is set to &lt;tt&gt;null&lt;/tt&gt;.  (This is useful in determining the length of this collection &lt;i&gt;only&lt;/i&gt; if the caller knows that this collection does not contain any &lt;tt&gt;null&lt;/tt&gt; elements.)&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order.&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;Like the &#123;@link #toArray()&#125; method, this method acts as bridge between array-based and collection-based APIs.  Further, this method allows precise control over the runtime type of the output array, and may, under certain circumstances, be used to save allocation costs.&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;Suppose &lt;tt&gt;x&lt;/tt&gt; is a collection known to contain only strings. The following code can be used to dump the collection into a newly allocated array of &lt;tt&gt;String&lt;/tt&gt;:&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;&lt;pre&gt;String[] y = x.toArray(new String[0]);&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;Note that &lt;tt&gt;toArray(new Object[0])&lt;/tt&gt; is identical in function to &lt;tt&gt;toArray()&lt;/tt&gt;.&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &gt;param</span><br><span class="line">  &gt;&gt; **```&lt;T&gt;```** the runtime type of the array to contain the collection&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &gt;&gt; **a** the array into which the elements of this collection are to be stored, if it is big enough; otherwise, a new array of the same runtime type is allocated for this purpose.&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;return an array containing all of the elements in this collection&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &gt;throws</span><br><span class="line">  &gt;&gt; **ArrayStoreException** if the runtime type of the specified array is not a supertype of the runtime type of every element in this collection&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &gt;&gt; **NullPointerException** if the specified array is null&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;返回一个包含该collection的全部元素的数组，返回的数组的运行时类型是规定的数组运行时类型如果该collection适合这个规定的数组，就返回进去，否则，将会根据规定数组的运行时类型和collection的大小重新分配一个数组&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;如果这个collection适合规定的数组，并且还有空余的空间，例如（数组拥有比这个collection更多的元素）将collection结束之后的数组的元素设置为null这对确定这个collection的长度是很有用的，除非调用者知道该collection不包含任何null元素&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;如果该collection根据迭代器对返回元素的顺序做了保证，那么该方法返回的元素顺序也必须一致&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;像上一个toArray()方法一样，这个方法也是充当着基于数组和基于集合的API之间的桥梁，此外，该方法允许精准控制输出数组的运行时类型，并且，能在某些情况下可以节省分配成本&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;假设x是已知只包含字符串的集合，以下代码可以将集合转存到新分配String数组中&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">  &lt;pre&gt;&lt;code&gt;String[] x = x.toArray(new String[0]);&lt;/code&gt;&lt;/pre&gt;</span><br><span class="line"></span><br><span class="line">&gt;注意toArray(new Object[0])在功能上与toArray()相同</span><br><span class="line">&gt;</span><br><span class="line">&gt;参数：</span><br><span class="line">&gt; &gt;**```&lt;T&gt;```** 包含collection的数组的运行时类型</span><br><span class="line">&gt; &gt;**a** 如果这个数组足够大，该collection的元素将会被存储，否则将为此重新分配一个相同运行时类型的数组</span><br><span class="line">&gt;</span><br><span class="line">&gt;返回值：一个包含了该collection全部元素的数组</span><br><span class="line">&gt;</span><br><span class="line">&gt;异常：</span><br><span class="line">&gt; &gt;**ArrayStoreException** 如果指定数组的运行时类型不是该集合中每个元素的运行时类型的超类型，则抛出异常</span><br><span class="line">&gt; &gt;**NullPointerException** 如果规定的数组为空，则抛出异常</span><br><span class="line"></span><br><span class="line">*	boolean add(E e)</span><br><span class="line">&gt;Ensures that this collection contains the specified element (optional operation).  Returns &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a result of the call.  (Returns &lt;tt&gt;false&lt;/tt&gt; if this collection does not permit duplicates and already contains the specified element.)</span><br><span class="line">&gt;</span><br><span class="line">&gt;Collections that support this operation may place limitations on what elements may be added to this collection.  In particular, some collections will refuse to add &lt;tt&gt;null&lt;/tt&gt; elements, and others will impose restrictions on the type of elements that may be added. Collection classes should clearly specify in their documentation any restrictions on what elements may be added.</span><br><span class="line">&gt;</span><br><span class="line">&gt;If a collection refuses to add a particular element for any reason other than that it already contains the element, it &lt;i&gt;must&lt;/i&gt; throw an exception (rather than returning &lt;tt&gt;false&lt;/tt&gt;).  This preserves the invariant that a collection always contains the specified element after this call returns.</span><br><span class="line">&gt;</span><br><span class="line">&gt;param **e** element whose presence in this collection is to be ensured</span><br><span class="line">&gt;</span><br><span class="line">&gt;return &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a result of the call</span><br><span class="line">&gt;</span><br><span class="line">&gt;throws:</span><br><span class="line">&gt; &gt;**UnsupportedOperationException** if the &lt;tt&gt;add&lt;/tt&gt; operation is not supported by this collection</span><br><span class="line">&gt; &gt;**ClassCastException** if the class of the specified element prevents it from being added to this collection</span><br><span class="line">&gt; &gt;**NullPointerException** if the specified element is null and this collection does not permit null elements</span><br><span class="line">&gt; &gt;**IllegalArgumentException** if some property of the element prevents it from being added to this collection</span><br><span class="line">&gt; &gt;**IllegalStateException** if the element cannot be added at this time due to insertion restrictions</span><br><span class="line">&gt;</span><br><span class="line">&gt;确保该collection包含规定的元素（可选的操作），当该collection的结果因为调用而改变了的时候返回true，（当该collection不允许重复或者已经包含这个规定的元素的时候返回false）</span><br><span class="line">&gt;</span><br><span class="line">&gt;支持这个操作的collection可能会限制哪些元素可能被添加到这个collection中，具体来说，一些collection将拒绝添加null元素，而其他collection将对可能添加的元素类型进行限制，collection类应该在其文档中明确指定可以添加元素的任何限制</span><br><span class="line">&gt;</span><br><span class="line">&gt;如果一个collection因为除了它已经包含该元素之外的任何原因拒绝添加该元素，都必须抛出一个异常（而不是返回false），这可以让collection在调用这个返回值之后能一直包含这个规定的元素保持不变</span><br><span class="line">&gt;</span><br><span class="line">&gt;参数：**e** 在该collection中确保存在的元素</span><br><span class="line">&gt;</span><br><span class="line">&gt;返回值：如果该collection的结果按照调用的更改了则返回true</span><br><span class="line">&gt;</span><br><span class="line">&gt;异常：</span><br><span class="line">&gt; &gt;**UnsupportedOperationException** 如果添加操作不被该collection支持，则抛出异常</span><br><span class="line">&gt; &gt;**ClassCastException** 如果规定元素的类阻止将这个元素添加到collection中，则抛出异常</span><br><span class="line">&gt; &gt;**NullPointerException** 如果规定元素为null并且这个collection不允许null元素，则抛出异常</span><br><span class="line">&gt; &gt;**IllegalArgumentException** 如果一些元素的属性阻止将其添加到collection中，则抛出异常</span><br><span class="line">&gt; &gt;**IllegalStateException** 如果这个元素在这个时间不能插入是由于插入限制，则抛出异常</span><br><span class="line"></span><br><span class="line">*	boolean remove(Object o)</span><br><span class="line">&gt;Removes a single instance of the specified element from this collection, if it is present (optional operation).  More formally, removes an element &lt;tt&gt;e&lt;/tt&gt; such that &lt;tt&gt;(o==null&amp;nbsp;?&amp;nbsp;e==null&amp;nbsp;:&amp;nbsp;o.equals(e))&lt;/tt&gt;, if this collection contains one or more such elements.  Returns &lt;tt&gt;true&lt;/tt&gt; if this collection contained the specified element (or equivalently, if this collection changed as a result of the call).</span><br><span class="line">&gt;</span><br><span class="line">&gt;param **o** element to be removed from this collection, if present</span><br><span class="line">&gt;</span><br><span class="line">&gt;return &lt;tt&gt;true&lt;/tt&gt; if an element was removed as a result of this call</span><br><span class="line">&gt;</span><br><span class="line">&gt;throws:</span><br><span class="line">&gt;&gt;**ClassCastException** if the type of the specified element is incompatible with this collection</span><br><span class="line">&gt;&gt;**NullPointerException** if the specified element is null and this collection does not permit null elements</span><br><span class="line">&gt;&gt;**UnsupportedOperationException** if the &lt;tt&gt;remove&lt;/tt&gt; operation is not supported by this collection</span><br><span class="line">&gt;</span><br><span class="line">&gt;从该collection中移除指定元素的单个实例（如果存在）。更正式地说，移除一个具备一下条件的元素e，</span><br><span class="line">&gt;当o和e同时满足为null时为true，或者o!=null,且o.equals(e)为true则为true</span><br><span class="line">&gt;如果这个collection包含一个或者多个这样的元素，返回true，如果这个collection包含这样规定的元素（或者等效的元素，如果这个collection根据调用的方法改变了）返回true</span><br><span class="line">&gt;</span><br><span class="line">&gt;参数：**o** collection中将要被移除的元素，如果存在</span><br><span class="line">&gt;</span><br><span class="line">&gt;返回值：如果结果某个元素按照调用被移除了，则返回true</span><br><span class="line">&gt;</span><br><span class="line">&gt;异常：</span><br><span class="line">&gt;&gt;**ClassCastException** 如果这个规定的元素与这个collection不相容，则抛出异常</span><br><span class="line">&gt;&gt;**NullPointerException** 如果这个规定的元素为空，并且这个collection没有允许空的元素，则抛出异常</span><br><span class="line">&gt;&gt;**UnsupportedOperationException** 如果这个collection不支持移除这个操作的话，则抛出异常</span><br><span class="line"></span><br><span class="line">*	boolean containsAll(Collection```&lt;?&gt;``` c)</span><br><span class="line">&gt;Returns &lt;tt&gt;true&lt;/tt&gt; if this collection contains all of the elements in the specified collection.</span><br><span class="line">&gt;</span><br><span class="line">&gt;param  c collection to be checked for containment in this collection</span><br><span class="line">&gt;</span><br><span class="line">&gt;return &lt;tt&gt;true&lt;/tt&gt; if this collection contains all of the elements in the specified collection</span><br><span class="line">&gt;</span><br><span class="line">&gt;throws:</span><br><span class="line">&gt;&gt;**ClassCastException** if the types of one or more elements in the specified collection are incompatible with this collection</span><br><span class="line">&gt;&gt;**NullPointerException** if the specified collection contains one or more null elements and this collection does not permit null elements or if the specified collection is null.</span><br><span class="line">&gt;</span><br><span class="line">&gt;如果在规定的collection中包含某个collection的全部元素，则返回true</span><br><span class="line">&gt;</span><br><span class="line">&gt;参数： **c** 检查当前collection是否包含的collection</span><br><span class="line">&gt;</span><br><span class="line">&gt;返回值：如果在规定的collection中包含某个collection的全部元素，则返回true</span><br><span class="line">&gt;</span><br><span class="line">&gt;异常：</span><br><span class="line">&gt;&gt;**ClassCastException** 如果在规定的collection中有一个或者多个元素类型与这个collection不符，则抛出异常</span><br><span class="line">&gt;&gt;**NullPointerException** 如果这个规定的collection包含一个或者多个空的元素，并且这个collection不允许空的元素，则抛出异常</span><br><span class="line"></span><br><span class="line">*	boolean addAll(Collection```&lt;? extends E&gt;``` c)</span><br><span class="line">&gt;Adds all of the elements in the specified collection to this collection (optional operation).  The behavior of this operation is undefined if the specified collection is modified while the operation is in progress. (This implies that the behavior of this call is undefined if the specified collection is this collection, and this collection is nonempty.)</span><br><span class="line">&gt;</span><br><span class="line">&gt;param **c** collection containing elements to be added to this collection</span><br><span class="line">&gt;</span><br><span class="line">&gt;return &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a result of the call</span><br><span class="line">&gt;</span><br><span class="line">&gt;throws:</span><br><span class="line">&gt;&gt;**UnsupportedOperationException** if the &lt;tt&gt;addAll&lt;/tt&gt; operation is not supported by this collection</span><br><span class="line">&gt;&gt;**ClassCastException** if the class of an element of the specified collection prevents it from being added to this collection</span><br><span class="line">&gt;&gt;**NullPointerException** if the specified collection contains a null element and this collection does not permit null elements, or if the specified collection is null</span><br><span class="line">&gt;&gt;**IllegalArgumentException** if some property of an element of the specified collection prevents it from being added to this collection</span><br><span class="line">&gt;&gt;**IllegalStateException** if not all the elements can be added at this time due to insertion restrictions</span><br><span class="line">&gt;</span><br><span class="line">&gt;添加规定collection中的全部元素到这个collection中（可选操作），如果这个规定的collection在操作过程中被修改，则这个操作的行为是没有被定义的，（这意味着，如果这个规定的collection是这个collection，并且这个collection是非空的，则这个调用行为是不明确的？？）</span><br><span class="line">&gt;</span><br><span class="line">&gt;参数：**c** collection中包含的将要添加到这个collection中的元素</span><br><span class="line">&gt;</span><br><span class="line">&gt;返回值：如果这个collection的结果按照调用改变了，则返回true</span><br><span class="line">&gt;</span><br><span class="line">&gt;异常：</span><br><span class="line">&gt;&gt;**UnsupportedOperationException** 如果这个collection不支持添加操作，则抛出异常</span><br><span class="line">&gt;&gt;**ClassCastException** 如果规定元素的类阻止将其添加到此collection中，则抛出异常</span><br><span class="line">&gt;&gt;**NullPointerException** 如果这个规定的collection包含一个null元素并且这个collection不允许null元素，或者这个规定的collection为null，则抛出异常</span><br><span class="line">&gt;&gt;**IllegalStateException** 如果并不是所有的元素都能在这个时间被添加是由于插入限制，则抛出异常</span><br><span class="line"></span><br><span class="line">*	boolean removeAll(Collection```&lt;?&gt;``` c)</span><br><span class="line">&gt;Removes all of this collection&apos;s elements that are also contained in the specified collection (optional operation).  After this call returns, this collection will contain no elements in common with the specified collection.</span><br><span class="line">&gt;</span><br><span class="line">&gt;param **c** collection containing elements to be removed from this collection</span><br><span class="line">&gt;</span><br><span class="line">&gt;return &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a result of the call</span><br><span class="line">&gt;</span><br><span class="line">&gt;throws:</span><br><span class="line">&gt;&gt;**UnsupportedOperationException** if the &lt;tt&gt;removeAll&lt;/tt&gt; method is not supported by this collection</span><br><span class="line">&gt;&gt;**ClassCastException** if the types of one or more elements in this collection are incompatible with the specified collection</span><br><span class="line">&gt;&gt;**NullPointerException** if this collection contains one or more null elements and the specified collection does not support null elements or if the specified collection is null</span><br><span class="line">&gt;</span><br><span class="line">&gt;从这个collection移除这些包含规定collection的所有元素（可选操作），得到这个操作的返回值之后，这个collection将不再包含与规定collection相同的元素</span><br><span class="line">&gt;</span><br><span class="line">&gt;参数：**c** 一个从这个collection中移除的包含元素的collection</span><br><span class="line">&gt;</span><br><span class="line">&gt;返回值：如果这个collection的结果按照调用改变了，则返回true</span><br><span class="line">&gt;</span><br><span class="line">&gt;异常：</span><br><span class="line">&gt;&gt;**UnsupportedOperationException** 如果removeAll这个方法并不被该collection支持，则抛出异常</span><br><span class="line">&gt;&gt;**ClassCastException** 如果这个collection中的一个或者多个元素与规定的collection类型不相符，则抛出异常</span><br><span class="line">&gt;**NullPointerException** 如果这个collection包含一个或者多个null的元素并且规定的collection并不支持null元素，或者这个规定的collection为null,则抛出异常</span><br><span class="line"></span><br><span class="line">*	default boolean removeIf(Predicate```&lt;? super E&gt;``` filter)</span><br><span class="line">	&gt;</span><br></pre></td></tr></table></figure></p>
+</li>
+</ul>
+<p>default boolean removeIf(Predicate&lt;? super E&gt; filter) {<br>    Objects.requireNonNull(filter);<br>    boolean removed = false;<br>    final Iterator<e> each = iterator();<br>    while(each.hasNext()){<br>      if(filter.test(each.next())){<br>          each.remove();<br>          removed = true;<br>      }<br>    }<br>    return removed;<br>}</e></p>
+<blockquote>
+<p>```<br>Removes all of the elements of this collection that satisfy the given predicate.  Errors or runtime exceptions thrown during iteration or by the predicate are relayed to the caller.</p>
+<p>param <strong>filter</strong> a predicate which returns {@code true} for elements to be removed</p>
+<p>return {@code true} if any elements were removed</p>
+<p>throws：</p>
+<blockquote>
+<p><strong>NullPointerException</strong> if the specified filter is null<br><strong>UnsupportedOperationException</strong> if elements cannot be removed from this collection.  Implementations may throw this exception if a matching element cannot be removed or if, in general, removal is not supported.</p>
+</blockquote>
+<p>删除满足给定的描述的所有集合的元素，在迭代过程中和由描述抛出的错误或运行时异常将传递给调用者</p>
+<p>参数：filter 对于返回值为true的被移除的元素的描述</p>
+<p>返回值：如果任何元素被移除了，则返回true</p>
+<p>异常：</p>
+<blockquote>
+<p><strong>NullPointerException</strong> 如果这个规定的filter为null<br><strong>UnsupportedOperationException</strong> 如果元素不能从这个collection中删除。如果不能删除匹配的元素或者不支持删除，实现类可能会抛出此异常<br>从1.8开始的新特性</p>
+</blockquote>
+</blockquote>
+<ul>
+<li><p>boolean retainAll(Collection<code>&lt;?&gt;</code> c)</p>
+<blockquote>
+<p>Retains only the elements in this collection that are contained in the specified collection (optional operation).  In other words, removes from this collection all of its elements that are not contained in the specified collection.</p>
+<p>param <strong>c</strong> collection containing elements to be retained in this collection</p>
+<p>return <tt>true</tt> if this collection changed as a result of the call</p>
+<p>throws:</p>
+<blockquote>
+<p><strong>UnsupportedOperationException</strong> if the <tt>retainAll</tt> operation is not supported by this collection<br><strong>ClassCastException</strong> if the types of one or more elements in this collection are incompatible with the specified collection<br><strong>NullPointerException</strong> if this collection contains one or more null elements and the specified collection does not permit null elements or if the specified collection is null</p>
+</blockquote>
+<p>只保留被包含在规定collection中的collection的元素（可选操作），对于其他元素，则直接移除</p>
+<p>参数：<strong>c</strong> 一个被这个collection包含的具有元素的collection</p>
+<p>返回值：如果这个集合的结果按照调用改变了，则返回true</p>
+<p>异常：</p>
+<blockquote>
+<p><strong>UnsupportedOperationException</strong> 如果这个collection不支持retainAll操作，则抛出异常<br><strong>ClassCastException</strong> 如果这个collection中的元素有一个或者多个与规定的collection中不相符，则抛出异常<br><strong>NullPointerException</strong> 如果这个collection包含一个或者多个null元素，并且规定的collection不允许null元素或者这个规定的collection为null</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>void clear()</p>
+<blockquote>
+<p>Removes all of the elements from this collection (optional operation). The collection will be empty after this method returns.</p>
+<p>throws <strong>UnsupportedOperationException</strong> if the <tt>clear</tt> operation is not supported by this collection</p>
+<p>移除这个collection中的全部元素（可选操作），当这个方法返回之后，这个collection将会为空</p>
+<p>异常：<strong>UnsupportedOperationException</strong> 如果这个collection不支持clear操作，则抛出异常</p>
+</blockquote>
+</li>
+<li><p>boolean equals(Object o)</p>
+<blockquote>
+<p>Compares the specified object with this collection for equality.</p>
+<p>将指定对象与collection比较</p>
+</blockquote>
+</li>
+<li><p>int hasCode()</p>
+<blockquote>
+<p>Returns the hash code value for this collection.  While the <tt>Collection</tt> interface adds no stipulations to the general contract for the <tt>Object.hashCode</tt> method, programmers should take note that any class that overrides the <tt>Object.equals</tt> method must also override the <tt>Object.hashCode</tt> method in order to satisfy the general contract for the <tt>Object.hashCode</tt> method. In particular, <tt>c1.equals(c2)</tt> implies that <tt>c1.hashCode()==c2.hashCode()</tt>.</p>
+<p>return the hash code value for this collection</p>
+<p>返回这个collection的hash值，虽然Collection接口不会为Object.hashCode方法的一般合约添加规定，但是程序员应该注意，任何重写Object.equals方法的类都应该重写Object.hashCode方法来满足Object.hashCode方法的通常合约，特别地，c1.equals(c2)意味着c1.hashCode()==c2.hashCode()</p>
+</blockquote>
+</li>
+<li><p>总结</p>
+<blockquote>
+<p>为什么要看源码？</p>
+<blockquote>
+<p>就拿这个Collection接口来说吧，看了源码，我们能知道在collection中能有哪些方法，这些方法是干什么的，这些操作要怎么用，一旦有类实现了这个Collection，我们就能使用这些方法，这对我们深入理解Java是有很大帮助的，有些比较打的框架，理解起来有困难的时候也能通过看源码来慢慢捋清</p>
+</blockquote>
+<p>如何看源码？</p>
+<blockquote>
+<p>我是用的idea看的，在里面写下想要看的源码内容，比如要看Collection这个接口的内容，直接写下Collection，然后选中右键Go To –&gt; Declaration就可以进入对应的源码了，操作如下如：<img src="http://img.blog.csdn.net/20171125215046499?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="写入想要查看的源码"><img src="http://img.blog.csdn.net/20171125215124462?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="选择goto查看"><img src="http://img.blog.csdn.net/20171125215249360?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="查看源码"></p>
+</blockquote>
+<p>Others</p>
+<blockquote>
+<p>当我们进入源码某个源码之后，我们就能对其祖先及后辈进行以前难以触及的研究了，具体有哪些类依赖于这个接口，具体有哪些接口继承于该接口，还是拿Collection接口作为例子，具体如下:<br>   点击接口名右边的绿色向下箭头圆球<br><img src="http://img.blog.csdn.net/20171125223123241?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="选择接口名"><br>选择我们比较熟悉的ArrayList<br><img src="http://img.blog.csdn.net/20171125223531321?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="选择ArrayList"><br>我们可以看见ArrayList是继承AbstractList类并且实现List接口<br><img src="http://img.blog.csdn.net/20171125224048031?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="ArrayList"><br>我们继续往上追溯看到AbstractList类    ，我们可以看到AbstractList类继承AbstractCollection类，并且实现List接口<br><img src="http://img.blog.csdn.net/20171125224406864?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="AbstractList"><br>最后看到AbstractCollection类和List接口<br><img src="http://img.blog.csdn.net/20171125225208994?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="AbstractCollection类"><br><img src="http://img.blog.csdn.net/20171125225048487?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="List接口"><br>于是最后根据这几层简单的追根溯源，总结出了如下UML图：<br><img src="http://img.blog.csdn.net/20171125230943276?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="UML图"><br>具体集合的结构，比我写出来的要复杂很多，我这里只是提供一个学习的方式，源码代表了目前我们写的Java的全部，私以为自己研究源码比看任何参考书和教学视频都要有用。</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/20/Collection源码翻译/" data-id="cjbepn0pw0002lgivefrmtvxk" class="article-share-link" data-share="baidu" data-title="Collection源码翻译">分享到</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/20/Collection源码翻译/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java集合/">Java集合</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Oracle操作之-表空间" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/20/Oracle操作之-表空间/" class="article-date">
+  <time datetime="2017-12-20T04:42:01.000Z" itemprop="datePublished">2017-12-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/20/Oracle操作之-表空间/">Oracle操作之--表空间</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>创建表空间：</p>
+<pre><code>create tablespace spacename//表空间名字 datafile 'filename.dbf'//数据文件名字 size 10M;</code></pre>
+</li>
+<li><p>创建完成后查询：</p>
+<pre><code>select tablespace_name from dba_tablespaces where tablespace_name='SPACENAME';</code></pre>
+</li>
+<li><p>查询表空间的状态：</p>
+<pre><code>select status from dba_tablespaces where tablespace_name='SPACENAME';</code></pre>
+</li>
+<li><p>修改表空间的状态：</p>
+<pre><code>alter tablespace SPACENAME read only/read write</code></pre>
+</li>
+<li><p>添加数据文件：</p>
+<pre><code>alter tablespace SPACENAME add datafile 'test2_datafile.dbf' size 10M;</code></pre>
+</li>
+<li><p>删除数据文件：</p>
+<pre><code>alter tablespace SPACENAME drop datafile 'test2_datafile.dbf';</code></pre>
+</li>
+<li><p>删除表空间：</p>
+<pre><code>drop tablespace SPACENAME including contents;//including contents目的是一并删除表空间里面的数据文件</code></pre>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/20/Oracle操作之-表空间/" data-id="cjbepn0q20006lgiv3fgmkspi" class="article-share-link" data-share="baidu" data-title="Oracle操作之--表空间">分享到</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/20/Oracle操作之-表空间/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Oracle操作之-表" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/20/Oracle操作之-表/" class="article-date">
+  <time datetime="2017-12-20T04:30:29.000Z" itemprop="datePublished">2017-12-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/20/Oracle操作之-表/">Oracle操作之--表</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>创建：</p>
+<blockquote>
+<p>创建一个userinfo表，里面的字段有id,username,userpasswd</p>
+<pre><code>create table userinfo
 (id number(6,0),
 username varchar2(20),
 userpasswd varchar2(20)
-redate</p>
-        
-    
-    <time datetime="2017-12-20T04:30:29.000Z" itemprop="datePublished">2017-12-20</time>
-  </a>
-</section>
+redate date);</code></pre>
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2017/12/18/集合中的类/" title="集合中的类" itemprop="url">
-  
-    <h1 itemprop="name">集合中的类</h1>
-    
-     
-           <p itemprop="description" >Collection
+<p>创建表的时候可以自己来指定表的表空间<br><pre><code>create table userinfo2<br>(id number(6,0),<br>username varchar2(20),<br>userpasswd varchar2(20) tablespace sys);</code></pre><br><br>如果不指定表空间，创建的表将默认为system表空间<br><br><br>若创建表后想知道该表有哪些字段，可以使用desc userinfo查询<br></p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>修改：</p>
+<blockquote>
+<p>修改表名</p>
+<pre><code>rename userinfo to new_userinfo</code></pre>
 
-List：
-LinkedList：可在任意位置进行高效地插入和删除操作的有序序列
-ArrayList：可动态增长和缩减的索引序列，有序序列
+<p>修改表的字段名</p>
+<pre><code>alter table userinfo
+rename column id to new_id;</code></pre>
 
+<p>在userinfo表中添加一个remarks字段</p>
+<pre><code>alter table userinfo
+add remarks varchar2(500);</code></pre>
 
-Set：
-HashSet：没有重复元素的无序集合
-LinkedSet：可以记住元素插入次序的集合
+<p>修改remarks字段的长度</p>
+<pre><code>alter table userinfo
+modify remarks varchar2(400);</code></pre>
+</blockquote>
+</li>
+<li><p>删除：</p>
+<blockquote>
+<p>删除字段</p>
+<pre><code>删除userinfo表中的remarks字段
+  alter table userinfo
+drop column remarks;</code></pre>
 
+<blockquote>
+<p>删除表<br>表的截断,即删掉表中的全部数据，但是表还存在</p>
+<pre><code>truncate table userinfo</code></pre>
 
-EnumS</p>
-        
-    
-    <time datetime="2017-12-18T12:06:45.000Z" itemprop="datePublished">2017-12-18</time>
-  </a>
-</section>
+<p>表的删除</p>
+<pre><code>drop table userinfo</code></pre>
+</blockquote>
+</blockquote>
+</li>
+</ul>
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2017/12/18/LinkedList/" title="集合之--LinkedList操作" itemprop="url">
-  
-    <h1 itemprop="name">集合之--LinkedList操作</h1>
-    
-     
-           <p itemprop="description" >插入元素
-
-逐条加入
-LinkedList list = new LinkedList();
-list.add(&#34;lambo&#34;);
-
-在指定地点插入元素
-LinkedList list = new LinkedList();
-list.add(0,&#34;lambo&#34;);
-
-将另外一个</p>
-        
-    
-    <time datetime="2017-12-18T01:38:51.000Z" itemprop="datePublished">2017-12-18</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2017/12/16/arraylist/" title="集合之--ArrayList操作" itemprop="url">
-  
-    <h1 itemprop="name">集合之--ArrayList操作</h1>
-    
-     
-           <p itemprop="description" >插入元素
-
-逐条加入
-ArrayList alist = new ArrayList();
-alist.add(&#34;lambo&#34;);
-
-在指定地点加入
-alist.add(1,&#34;lambo2&#34;)
-
-将另一个ArrayList加入当前ArrayList
-ArrayList alist</p>
-        
-    
-    <time datetime="2017-12-15T17:00:03.000Z" itemprop="datePublished">2017-12-16</time>
-  </a>
-</section>
-
-
-</div>
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
-<aside class="clearfix">
-
-  
-
-  
-<div class="tagslist">
-	<p class="asidetitle">Tags</p>
-		<ul class="clearfix">
-		
-			<li><a href="/tags/Java集合/" title="Java集合">Java集合<sup>4</sup></a></li>
-		
-			<li><a href="/tags/Oracle/" title="Oracle">Oracle<sup>2</sup></a></li>
-		
-		</ul>
-</div>
-
-
-  <div class="rsspart">
-	<a href="" target="_blank" title="rss">RSS</a>
-</div>
-
-</aside>
-</div>
+      
     </div>
-    <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<div class="social-font clearfix">
-		
-		
-		
-		
-		
-	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2017 
-		
-		<a href="http://yoursite.com" target="_blank" title="lambo">lambo</a>
-		
-		</p>
-</div>
-</footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/20/Oracle操作之-表/" data-id="cjbepn0q00004lgiv2wfjebs6" class="article-share-link" data-share="baidu" data-title="Oracle操作之--表">分享到</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/20/Oracle操作之-表/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Oracle/">Oracle</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-集合中的类" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/18/集合中的类/" class="article-date">
+  <time datetime="2017-12-18T12:06:45.000Z" itemprop="datePublished">2017-12-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
-    }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
-});
-</script>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/18/集合中的类/">集合中的类</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://img.blog.csdn.net/20171118231401688?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTGFtYm9yZ2hpbnN6/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="集合中的类"></p>
+<ul>
+<li><p>Collection</p>
+<ul>
+<li>List：<ul>
+<li>LinkedList：可在任意位置进行高效地插入和删除操作的有序序列</li>
+<li>ArrayList：可动态增长和缩减的索引序列，有序序列</li>
+</ul>
+</li>
+<li>Set：<ul>
+<li>HashSet：没有重复元素的无序集合<ul>
+<li>LinkedSet：可以记住元素插入次序的集合</li>
+</ul>
+</li>
+<li>EnumSet：包含枚举类型值的集合</li>
+<li>TreeSet：一种有序集合</li>
+</ul>
+</li>
+<li>Queue：<ul>
+<li>PriorityQueue：一种允许高效删除最小元素的集合，使用的数据结构是堆</li>
+</ul>
+</li>
+<li>ArrayDeque：一种用循环数组实现的双端队列</li>
+</ul>
+</li>
+<li><p>Map</p>
+<ul>
+<li>HashMap：一种存储键/值关联的数据结构<ul>
+<li>LinkedMap：一种可以记住键/值添加次序的映射表</li>
+</ul>
+</li>
+<li>TreeMap：一种键/值有序排列的映射表</li>
+<li>EnumMap：一种键/值属于枚举类型的映射表</li>
+<li>WeekHashMap：一种值无用武之地时可被垃圾回收机制回收的映射表</li>
+<li>IdentifyHashMap：一种用==而不是equals比较键/值的映射表</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/18/集合中的类/" data-id="cjbepn0q10005lgive3zhz9nm" class="article-share-link" data-share="baidu" data-title="集合中的类">分享到</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/18/集合中的类/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java集合/">Java集合</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
 
 
+  
+    <article id="post-LinkedList" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/18/LinkedList/" class="article-date">
+  <time datetime="2017-12-18T01:38:51.000Z" itemprop="datePublished">2017-12-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/18/LinkedList/">集合之--LinkedList操作</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>插入元素</p>
+<blockquote>
+<p>逐条加入</p>
+<pre><code>LinkedList<string> list = new LinkedList<>();
+list.add("lambo");</string></code></pre>
+
+<p>在指定地点插入元素</p>
+<pre><code>LinkedList<string> list = new LinkedList<>();
+list.add(0,"lambo");</string></code></pre>
+
+<p>将另外一个LinkedList的内容添加到当前LinkedList中</p>
+<pre><code>LinkedList<string> list2 = new LinkedList<>();
+list2.addAll(list);
+</string></code></pre>
+
+<p>在头部或者尾部加入元素</p>
+<pre><code>LinkedList<string> list = new LinkedList<>();
+list.addFirst("lambo");
+list.addLast("lambosz");</string></code></pre>
+
+<p>other</p>
+<pre><code>LinkedList同样支持clone(),将一个LinkedList复制给另一个LinkedList
+list2 = (LinedList<string>) list.clone();</string></code></pre>
+</blockquote>
+</li>
+<li><p>删除元素</p>
+<blockquote>
+<p>移除指定位置的元素</p>
+  <pre><code>list.remove(0);</code></pre>
+
+<p>清除整个LinkedList</p>
+  <pre><code>list.clear();</code></pre>
+
+<p>移除首部或尾部的元素</p>
+  <pre><code>list.removeFirst();
+  list.removeLast();</code></pre>
+
+<p>移除第一个或最后一个值为指定值的元素</p>
+  <pre><code>list.removeFirstOccurrence("lambo");
+  list.removeLastOccurrence("lambo");</code></pre></blockquote>
+</li>
+<li><p>遍历</p>
+<blockquote>
+<p>迭代器遍历</p>
+  <pre><code>LinkedList<integer> list = new LinkedList<>();
+  for(int i = 0;i < 10000 ;i++){
+      list.add(i);
+  }
+  Iterator<integer> iterator = list.iterator();
+  while(iterator.hasNext()){
+      iterator.next();
+  }</integer></integer></code></pre>
+
+<p>for循环遍历</p>
+  <pre><code>for(int j = 0;j<list.size();j++){ list.get(i);="" }<="" code=""></list.size();j++){></code></pre>
+
+<p>for each循环遍历</p>
+  <pre><code>for(Integer i:list){
+      list.get(i)
+  }</code></pre>
+
+<p>其他遍历</p>
+  <pre><code>LinkedList<integer> list2 = new LinkedList<>();
+  list2.addAll(list);
+  while(list2.size()!=0){
+      list2.pollFirst();
+  }//使用pollFirst()或者pollLast()来遍历</integer></code></pre>
+<pre><code>LinkedList<integer> list3 = new LinkedList<>();
+  list3.addAll(list);
+  while(list3.size()!=0){
+       list3.removeFirst();
+  }//使用removeFirst()或者removeLast()来遍历</integer></code></pre>
+</blockquote>
+</li>
+<li><p>总结</p>
+<blockquote>
+<p>LinkedList包含了一个index和一个element，index用来指向位置，element用来存放内容，所以在插入删除的时候能通过index很快的找到插入删除点，<strong>可以实现高效地插入删除</strong>，并且每个element之间并不干扰，所以LinkedList的内容是<strong>可以重复的</strong>，并且有了index，所以同时它也是<strong>有序的</strong></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p>承接自我上一篇博客<a href="http://blog.csdn.net/Lamborghinsz/article/details/78580985" target="_blank" rel="noopener">集合中的类</a>，接下来会继续展开</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/18/LinkedList/" data-id="cjbepn0pu0001lgivs57hkkc2" class="article-share-link" data-share="baidu" data-title="集合之--LinkedList操作">分享到</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/18/LinkedList/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java集合/">Java集合</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
 
 
+  
+    <article id="post-arraylist" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/16/arraylist/" class="article-date">
+  <time datetime="2017-12-15T17:00:03.000Z" itemprop="datePublished">2017-12-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/16/arraylist/">集合之--ArrayList操作</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>插入元素</p>
+<blockquote>
+<p>逐条加入</p>
+<pre><code>ArrayList<string> alist = new ArrayList();
+alist.add("lambo");</string></code></pre>
+
+<p>在指定地点加入</p>
+<pre><code>alist.add(1,"lambo2")</code></pre>
+
+<p>将另一个ArrayList加入当前ArrayList</p>
+<pre><code>ArrayList alist2 = new ArrayList();
+alist2.add("lambos");
+alist.addAll(alist2);</code></pre>
+</blockquote>
+</li>
+<li><p>删除元素</p>
+<blockquote>
+<p>删除对应位置的内容</p>
+<pre><code>alist.remove(1);</code></pre>
+
+<p>删除整个ArrayList</p>
+<pre><code>alist.clear();</code></pre>
+
+<p>按照条件删除对应字段</p>
+<pre><code>alist.removeIf(str -> str.length() > 5)//这里删除的是长度5以上的字段，使用的是Lambda表达式，具体的Lambda以后在详细说明</code></pre>
+</blockquote>
+</li>
+<li><p>遍历</p>
+<blockquote>
+<p>iterator遍历</p>
+<pre><code>Iterator it = alist.iterator();
+while (it.hasNext()) {
+   it.next();
+}</code></pre>
+
+<p>for循环遍历</p>
+<pre><code>for (int i = 0; i < alist.size(); i++) {
+       alist.get(i);
+   }</code></pre>
+
+<p>for each循环遍历</p>
+<pre><code>for (String s:alist) {
+       System.out.println(s);
+   }</code></pre>
+</blockquote>
+</li>
+<li><p>总结</p>
+<blockquote>
+<p>ArrayList和LinkedList由于都是实现的List类，所以大部分操作都是类似的，熟悉了LinkedList的相关操作，ArrayList大部分也就都会了，但是这里要说明的这两个list的不同之处，方便在实际开发中进行选择</p>
+<blockquote>
+<p>ArrayList是<strong>基于索引的数据结构</strong>，通过索引来<strong>读取数据比较快</strong>，但ArrayList有个<strong>扩容操作</strong>，会消耗一定资源，并且对于<strong>添加和删除效率比较差</strong>，因为执行添加删除操作之后ArrayList要重新排布插入点或删除点后面的全部数据，越靠前，消耗越大。</p>
+<p>LinkedList是<strong>基于链表的数据结构</strong>，<strong>读取数据是比较慢</strong>，因为它要从第一个节点往后遍历，但是对于<strong>插入删除数据，LinkedList是比较快的</strong>，因为LinkedList的节点与节点之间是不连续的，是通过记录上一个节点和下一个节点将整个list串起来的，所以在执行插入删除操作时，只需要修改对应的上一个节点和下一个节点就好。</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://yoursite.com/2017/12/16/arraylist/" data-id="cjbepn0q50009lgivtxd0y300" class="article-share-link" data-share="baidu" data-title="集合之--ArrayList操作">分享到</a>
+      
+
+      
+        <a href="http://yoursite.com/2017/12/16/arraylist/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java集合/">Java集合</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
 
 
+  
+
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java集合/">Java集合</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Oracle/">Oracle</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Java集合/" style="font-size: 20px;">Java集合</a> <a href="/tags/Oracle/" style="font-size: 10px;">Oracle</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/12/20/Collection源码翻译/">Collection源码翻译</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/20/Oracle操作之-表空间/">Oracle操作之--表空间</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/20/Oracle操作之-表/">Oracle操作之--表</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/18/集合中的类/">集合中的类</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/18/LinkedList/">集合之--LinkedList操作</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">友情链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://arvinxiang.com" target="_blank">主题作者</a>
+          </li>
+        
+          <li>
+            <a href="http://reqianduan.com" target="_blank">热前端</a>
+          </li>
+        
+          <li>
+            <a href="http://yuancheng.work" target="_blank">远程.work</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 lambo<br>
+      Powered by <a href="//hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
 <script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', '', 'https://lamborsz.github.io/');  
-ga('send', 'pageview');
+var duoshuoQuery = {short_name:"reqianduan"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>
+  function SetShareData(cmd, config) {
+    if (shareDataTitle && shareDataUrl) {
+      config.bdText = shareDataTitle;
+      config.bdUrl = shareDataUrl;
+    }
+    return config;
+  }
+  window._bd_share_config={
+    "common":{onBeforeClick: SetShareData},
+    "share":{"bdCustomStyle":"/css/bdshare.css"}
+  };
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
 </script>
 
+<!-- 百度分享 end -->
 
-  </body>
- </html>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
